@@ -1,43 +1,33 @@
 import { BrowserRouter, Route, Link, Routes } from "react-router-dom";
-import Home from "./Home.jsx";
-import Bookmarks from "./Bookmarks.jsx";
-import Settings from "./Settings.jsx";
-import logo from "../assets/images/logo.png";
-import WordPage from "./WordPage.jsx";
+// import Landing from "../pages/Landing";
 
 
-export default function Navbar() {
+export default function DashNav() {
   return (
     <>
       <BrowserRouter>
-        <nav className="navbar">
-          <ul className="navbar-nav">
+        <nav className="dashnavbar">
+          <ul className="dashnavbar-nav">
             <li className="logo">
-              <img src={logo} alt="Verba Logo" />
-              <Link element="true" title="Home" to="/" className="nav-link">
-                <span className="link-text">Verba</span>
+              {/* <img src={logo} alt="SendMe Logo" /> */}
+              <Link element="true" title="Dashboard" to="/" className="dashnav-link">
+                <span className="link-text">SendMe</span>
               </Link>
             </li>
-            <li className="nav-item">
-              <Link element="true" title="Home" to="/" className="nav-link active">
+            <li className="dashnav-item">
+              <Link element="true" title="Dashboard" to="/" className="dashnav-link active">
                 <i className="bi-house-door-fill"></i>
                 <span className="link-text">Home</span>
               </Link>
             </li>
-            <li className="nav-item">
-              <Link element="true" title="Save" to="/saved" className="nav-link">
+            <li className="dashnav-item">
+              <Link element="true" title="Save" to="/saved" className="dashnav-link">
                 <i className="bi-bookmark"></i>
                 <span className="link-text">Saved</span>
               </Link>
             </li>
-            <li className="nav-item hidden">
-              <Link element="true" title="Word Search" to="/word/:word" className="nav-link">
-                <i className="bi-x"></i>
-                <span className="link-text">Saved</span>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link element="true" title="Settings" to="/settings" className="nav-link">
+            <li className="dashnav-item">
+              <Link element="true" title="Settings" to="/settings" className="dashnav-link">
                 <i className="bi-gear"></i>
                 <span className="link-text">Settings</span>
               </Link>
@@ -45,10 +35,8 @@ export default function Navbar() {
           </ul>
         </nav>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/saved" element={<Bookmarks />} />
-          <Route path="/settings" element={<Settings />} />
-          <Route path="/word/:word" element={<WordPage />} />
+          {/* <Route path="/" element={<Landing />} /> */}
+          {/*<Route path="/word/:word" element={<WordPage />} /> */}
         </Routes>
       </BrowserRouter>
     </>

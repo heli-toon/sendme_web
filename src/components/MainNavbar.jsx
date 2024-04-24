@@ -1,8 +1,8 @@
 
 import { BrowserRouter, Route, Link, Routes } from "react-router-dom";
-import Hero from './Hero'
 import Waitlist from './Waitlist'
 import { useCallback, useEffect, useState } from "react";
+import Landing from "../pages/Landing";
 
 
 export default function MainNavbar() {
@@ -37,7 +37,7 @@ export default function MainNavbar() {
                                 <img src="images/logo.png" alt="" className="img-fluid"/>
                             </Link>
                             <h1 className="logo me-auto me-lg-0">
-                                <Link element="true" title="Home" to="/">SendMe</Link>
+                                <Link element="true" title="Landing" to="/">SendMe</Link>
                             </h1>
                         </div>
                         <nav id="navbar" className="navbar order-last order-lg-0">
@@ -59,7 +59,7 @@ export default function MainNavbar() {
                     </div>
                 </header>
                 <Routes>
-                    <Route path="/" element={<Hero />} />
+                    <Route path="/" element={<Landing />} />
                     {/* <Route path="/saved" element={<About />} /> */}
                     <Route path="/settings" element={<Waitlist />} />
                 </Routes>
