@@ -75,7 +75,7 @@ export default function Faqs() {
                     data-bs-parent="#faqlist1"
                   >
                     <div className="accordion-body">
-                      Anything, from remote typing jobs to house renovationings
+                      Anything, from remote typing jobs to house renovations
                       to community labour.
                     </div>
                   </div>

@@ -1,4 +1,6 @@
-export default function error500() {
+import errorimage from '../assets/images/error-page.png'
+
+export default function Error500() {
   window.document.title = 'SendMe | Server Error'
   return (
     <>
@@ -9,7 +11,7 @@ export default function error500() {
           Back to home
         </a>
         <img
-          src="/images/error-page.png"
+          src={errorimage}
           className="img-fluid py-5"
           alt="Internal Server Error"
         />

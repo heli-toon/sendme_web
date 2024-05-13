@@ -1,12 +1,29 @@
+import { useCallback, useEffect, useRef, useState } from "react";
+import logo from "../assets/logo.png";
 
-import { BrowserRouter, Route, Link, Routes } from "react-router-dom";
-import Waitlist from './Waitlist'
-import { useCallback, useEffect, useState } from "react";
-import Landing from "../pages/Landing";
+const MainNavbar = () => {
+  const [showNavbarCollapse, setShowNavbarCollapse] = useState(false);
+  const navbarRef = useRef(null);
 
+  const handleToggleNavbarCollapse = () => {
+    setShowNavbarCollapse(!showNavbarCollapse);
+  };
 
-export default function MainNavbar() {
-    const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const handleWindowScroll = () => {
+    if (window.scrollY > 25) {
+      navbarRef.current.classList.add("header-scrolled");
+    } else {
+      navbarRef.current.classList.remove("header-scrolled");
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleWindowScroll);
+    return () => {
+      window.removeEventListener("scroll", handleWindowScroll);
+    };
+  }, []);
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
 
   useEffect(() => {
     if (localStorage.getItem("isDarkTheme") === "true") {
@@ -27,43 +44,42 @@ export default function MainNavbar() {
     setIsDarkTheme(!isDarkTheme);
     localStorage.setItem("isDarkTheme", !isDarkTheme);
   }, [isDarkTheme]);
-    return(
-        <>
-            <BrowserRouter>
-                <header id="header" className="fixed-top">
-                    <div className="header-wrapper container d-flex align-items-center justify-content-lg-between space-between">
-                        <div className="d-flex flex-row">
-                            <Link className="logo me-auto me-lg-0" element="true" title="Home" to="/">
-                                <img src="images/logo.png" alt="" className="img-fluid"/>
-                            </Link>
-                            <h1 className="logo me-auto me-lg-0">
-                                <Link element="true" title="Landing" to="/">SendMe</Link>
-                            </h1>
-                        </div>
-                        <nav id="navbar" className="navbar order-last order-lg-0">
-                            <ul>
-                                <li><Link className="nav-link scrollto" href="#about">About</Link></li>
-                                <li><Link className="nav-link scrollto" href="#services">Services</Link></li>
-                                {/* <li><Link className="nav-link scrollto" href="#help">Help</Link></li>*/}
-                                <li><Link className="nav-link scrollto btned" element="true" title="Waitlist" to="/">Join</Link></li>
-                                <li className="theme-switcher">
-                                <label htmlFor="toggle" className="dark-toggle-text">Switch Theme</label>
-                                <label htmlFor="toggle" className="toggle nav-link">
-                                    <input title="Theme" name="theme" id="toggle" type="checkbox" checked={isDarkTheme} onChange={toggleTheme} />
-                                    <span className="slider"></span>
-                                </label>
-                                </li>
-                            </ul>
-                            <i className="bi bi-list mobile-nav-toggle"></i>
-                        </nav>
-                    </div>
-                </header>
-                <Routes>
-                    <Route path="/" element={<Landing />} />
-                    {/* <Route path="/saved" element={<About />} /> */}
-                    <Route path="/settings" element={<Waitlist />} />
-                </Routes>
-            </BrowserRouter>
-        </>
-    )
+
+  return (
+    <>
+      <header id="header" className="fixed-top" ref={navbarRef}>
+        <div className="header-wrapper container d-flex align-items-center justify-content-lg-between space-between">
+          <div className="d-flex flex-row align-items-center justify-content-center">
+            <a className="logo me-auto me-lg-0" title="Home" href="/landing#">
+              <img src={logo} alt="" className="img-fluid" />
+            </a>
+            <h1 className="logo me-auto me-lg-0">
+              <a title="Landing" href="/">
+                SendMe
+              </a>
+            </h1>
+          </div>
+          <nav id="navbar" className={`navbar order-last order-lg-0 ${showNavbarCollapse ? "navbar-mobile" : ""}`} >
+            <ul>
+              <li><a className="nav-link scrollto" href="#about">About</a></li>
+              <li><a className="nav-link scrollto" href="#services">Services</a></li>
+              {/* <li><a className="nav-link scrollto" href="#help">Help</a></li>*/}
+              <li><a className="nav-link scrollto btned" title="Waitlist" href="/landing#waitlist">Join</a></li>
+              <li className="theme-switcher">
+                <label htmlFor="toggle" className="dark-toggle-text">
+                  Switch Theme
+                </label>
+                <label htmlFor="toggle" className="toggle nav-link">
+                  <input title="Theme" name="theme" id="toggle" type="checkbox" checked={isDarkTheme} onChange={toggleTheme}/>
+                  <span className="slider"></span>
+                </label>
+              </li>
+            </ul>
+            <i className="bi bi-list mobile-nav-toggle" onClick={handleToggleNavbarCollapse} aria-label="Toggle navigation"></i>
+          </nav>
+        </div>
+      </header>
+    </>
+  );
 }
+export default MainNavbar

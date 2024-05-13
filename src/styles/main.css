@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Agbalumo";
-  src: url("../fonts/Agbalumo-Regular.ttf");
+  src: url("../assets/fonts/Agbalumo-Regular.ttf");
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Regular.ttf");
+  src: url("../assets/fonts/Montserrat-Regular.ttf");
 }
 :root {
   --gradient: linear-gradient(
@@ -295,6 +295,7 @@ select {
 .dark-toggle-text{
   font-size: 1rem !important;
   padding: 0.7rem 1.4rem !important;
+  width: 85%;
   display: none;
 }
 .navbar-mobile .dark-toggle-text{
@@ -376,6 +377,39 @@ input:checked + .slider:before{transform:translateX(26px)}
   color: var(--text-color) !important;
 }
 .onboarding .input-group-text{padding: 0 1em}
+.login a img, .register a img{
+  max-height: 2rem;
+}
+.enterwgooogle{
+  padding: .5em .3em;
+  background: var(--bg-teri);
+  border-radius: var(--border-rad-card);
+  color: var(--text-color);
+  transition: var(--anim-short);
+}
+.enterwgooogle:hover{
+  filter: brightness(1.2);
+}
+.or{
+  color: var(--gray); 
+  margin-bottom:1rem; 
+  position: relative;
+}
+.or::after, .or::before{
+  background: var(--gray);
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: 50%;
+}
+.or::after{
+  left: 55%;
+  right: 0;
+}
+.or::before{
+  left: 0;
+  right: 55%;
+}
 .form-check{
   display: flex;
   align-items: center;
@@ -385,7 +419,7 @@ input:checked + .slider:before{transform:translateX(26px)}
 # Hero
 --------------------------------------------------------------*/
 #hero.hero-fullscreen{
-  background: url("../images/hero-fullscreen-bg.jpg") center center;
+  background: url("../assets/images/hero-fullscreen-bg.jpg") center center;
   min-height: 100vh;
   background-size: cover;
   width: 100%;
@@ -467,9 +501,9 @@ input:checked + .slider:before{transform:translateX(26px)}
   }
 }
 /* INAPP */
-@media(max-width:426px){main#in{margin:70px 1rem!important}}
+@media(max-width:426px){main#in{margin:70px 1rem!important;}}
 main#in{
-  margin:70px 2rem;
+  margin:70px 6rem 2rem;
   padding-top:1rem;
   display:flex;
   justify-content:space-between;
@@ -1099,7 +1133,7 @@ nav.dashnavbar .logo img {
   bottom: 0;
   height: 100%;
   width: 100%;
-  background: url('../images/team-shape.svg') no-repeat center bottom;
+  background: url('../assets/images/team-shape.svg') no-repeat center bottom;
   background-size: contain;
   z-index: 1;
 }

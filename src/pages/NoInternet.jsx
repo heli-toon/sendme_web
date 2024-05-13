@@ -1,3 +1,5 @@
+import errorimage from '../assets/images/error-page.png'
+
 export default function NoInternet() {
     window.document.title = 'SendMe | No Internet';
     return(
@@ -6,7 +8,7 @@ export default function NoInternet() {
                 <h1>No Internet</h1>
                 <h2>You&apos;re not connected. And the web just isn&apos;t the same without you. Let&apos;s get you back online!</h2>
                 <a className="btned" href="#">Refresh</a>
-                <img src="/images/error-page.png" className="img-fluid py-5" alt="Page Not Found" />
+                <img src={errorimage} className="img-fluid py-5" alt="No Internet" />
             </section>
         </>
     )

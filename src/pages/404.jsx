@@ -1,4 +1,5 @@
-export default function error404() {
+import errorimage from '../assets/images/error-page.png'
+export default function Error404() {
   window.document.title = 'SendMe | Page Not Found'
   return (
     <>
@@ -9,7 +10,7 @@ export default function error404() {
           Back to home
         </a>
         <img
-          src="/images/error-page.png"
+          src={errorimage}
           className="img-fluid py-5"
           alt="Page Not Found"
         />
