@@ -1,7 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap'
+import logo from "../assets/logo.png";
 
 export default function Login() {
+    window.document.title = 'SendMe | Login';
     return(
         <>
             <section className="login min-vh-100 d-flex flex-column align-items-center justify-content-center">
@@ -9,8 +11,8 @@ export default function Login() {
                 <div className="row justify-content-center">
                     <div className="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
                     <div className="d-flex justify-content-center py-4">
-                        <a href="index.html" className="logo d-flex align-items-center w-auto">
-                        <img src="images/logo.png" alt="" />
+                        <a href="/landing" className="logo d-flex align-items-center w-auto">
+                        <img src={logo} alt="" />
                         <span className="d-none d-lg-block">SendMe</span>
                         </a>
                     </div>
@@ -18,7 +20,6 @@ export default function Login() {
                         <div className="onboarding card-body">
                         <div className="pt-2 pb-2">
                             <h5 className="card-title text-center pb-0 fs-4">Login to SendMe</h5>
-                            <p className="text-center small">Enter your username & password to login</p>
                         </div>
                         <form className="row g-3 needs-validation" noValidate>
                             <div className="col-12">
@@ -76,7 +77,7 @@ export default function Login() {
                             <button className="btned w-100" type="submit">Login</button>
                             </div>
                             <div className="col-12">
-                            <p className="small mb-0">Don&apos;t have account? <a href="/register.html">Create an account</a></p>
+                            <p className="small mb-0">Don&apos;t have account? <a href="/register">Create an account</a></p>
                             </div>
                         </form>
                         </div>

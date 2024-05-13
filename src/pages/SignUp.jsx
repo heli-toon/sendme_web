@@ -1,8 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle'
-
+import logo from "../assets/logo.png";
 
 export default function SignUp() {
+    window.document.title = 'SendMe | Register';
     return(
         <>
             <section className="register min-vh-100 d-flex flex-column align-items-center justify-content-center">
@@ -10,8 +11,8 @@ export default function SignUp() {
                 <div className="row justify-content-center">
                     <div className="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
                     <div className="d-flex justify-content-center py-4">
-                        <a href="index.html" className="logo d-flex align-items-center w-auto">
-                        <img src="images/logo.png" alt="SendMe Logo" />
+                        <a href="/landing" className="logo d-flex align-items-center w-auto">
+                        <img src={logo} alt="SendMe Logo" />
                         <span className="d-none d-lg-block">SendMe</span>
                         </a>
                     </div>
@@ -19,7 +20,6 @@ export default function SignUp() {
                         <div className="onboarding card-body">
                         <div className="pt-2 pb-2">
                             <h5 className="card-title text-center pb-0 fs-4">Create Account</h5>
-                            <p className="text-center small">Enter your personal details to create account</p>
                         </div>
                         <form className="row g-3 needs-validation" noValidate>
                             <div className="col-12">
@@ -83,7 +83,7 @@ export default function SignUp() {
                             <button className="btned w-100" type="submit">Create Account</button>
                             </div>
                             <div className="col-12">
-                            <p className="small mb-0">Already have an account? <a href="/login.html">Log in</a></p>
+                            <p className="small mb-0">Already have an account? <a href="/login">Log in</a></p>
                             </div>
                         </form>
                         </div>

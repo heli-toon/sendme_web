@@ -10,7 +10,7 @@ export default function Faqs() {
               intimidating, which is why we&apos;ve made it easy to find the perfect
               helper for your needs. Our platform allows you to view profiles,
               read reviews, and communicate directly with helpers before making
-              a decision.
+              a decision. It also makes sure payments are clear-cut and simple.
             </p>
           </header>
           <div className="row">

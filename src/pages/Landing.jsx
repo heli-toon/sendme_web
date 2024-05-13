@@ -1,5 +1,6 @@
 import Hero from '../components/Hero.jsx'
 import Faqs from '../components/Faqs.jsx'
+import About from '../components/About.jsx'
 import Footer from '../components/Footer.jsx'
 import Contact from '../components/Contact.jsx'
 import Waitlist from '../components/Waitlist.jsx'
@@ -12,8 +13,9 @@ export default function Landing() {
         <>
             <MainNavbar />
             <Hero />
-            <Waitlist />
+            <About />
             <Faqs />
+            <Waitlist />
             <Contact />
             <Footer />
             <Backtotop />

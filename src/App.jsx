@@ -1,15 +1,16 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Login from './pages/Login'
+import Error404 from './pages/404'
+import Error500 from './pages/500'
+import SignUp from './pages/SignUp'
 import Landing from './pages/Landing'
 import Settings from './pages/Settings'
 import Dashboard from './pages/Dashboard'
 import NoInternet from './pages/NoInternet'
-import Error404 from './pages/404'
-import Error500 from './pages/500'
 import './styles/main.css'
 import './styles/bootstrap-icons.min.css'
+
 import { useEffect, useState } from 'react'
-import Login from './pages/Login'
-import SignUp from './pages/SignUp'
 
 export default function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
@@ -39,7 +40,7 @@ export default function App() {
           <Route path='/500' element={<Error500 />}></Route>
           <Route path='/nointernet' element={<NoInternet />}></Route>
           <Route path='/login' element={<Login />}></Route>
-          <Route path='/signup' element={<SignUp />}></Route>
+          <Route path='/register' element={<SignUp />}></Route>
         </Routes>
       </BrowserRouter>
     </>
