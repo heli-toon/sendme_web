@@ -1,9 +1,23 @@
+import { useState, useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.bundle'
+import 'bootstrap'
 import logo from "../assets/logo.png";
 
 export default function SignUp() {
     window.document.title = 'SendMe | Register';
+    const onboardingRef = useRef(null);
+    const [validated, setValidated] = useState(false);
+
+    const handleSubmit = (event) => {
+        
+        const form = onboardingRef.current;
+        form.classList.add("was-validated")
+        if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+            setValidated(true);
+        }
+    };
     return(
         <>
             <section className="register min-vh-100 d-flex flex-column align-items-center justify-content-center">
@@ -11,7 +25,7 @@ export default function SignUp() {
                 <div className="row justify-content-center">
                     <div className="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
                     <div className="d-flex justify-content-center py-4">
-                        <a href="/landing" className="logo d-flex align-items-center w-auto">
+                        <a href="/register" className="logo d-flex align-items-center w-auto">
                         <img src={logo} alt="SendMe Logo" />
                         <span className="d-none d-lg-block">SendMe</span>
                         </a>
@@ -21,24 +35,24 @@ export default function SignUp() {
                         <div className="pt-2 pb-2">
                             <h5 className="card-title text-center pb-0 fs-4">Create Account</h5>
                         </div>
-                        <form className="row g-3 needs-validation" noValidate>
+                        <form className="row g-3 needs-validation" ref={onboardingRef} onSubmit={handleSubmit} noValidate>
                             <div className="col-12">
                             <label htmlFor="yourUsername" className="form-label">Username</label>
                             <div className="input-group has-validation">
                                 <span className="input-group-text" id="inputGroupPrepend">@</span>
                                 <input type="text" name="username" placeholder="Username" className="form-control" id="yourUsername" required />
-                                <div className="invalid-feedback">Please choose a username.</div>
+                                {validated && <div className="invalid-feedback">Please choose a username.</div>}
                             </div>
                             </div>
                             <div className="col-12">
                             <label htmlFor="yourEmail" className="form-label">Your Email</label>
                             <input type="email" name="email" placeholder="Email" className="form-control" id="yourEmail" required />
-                            <div className="invalid-feedback">Please enter a valid Email adddress!</div>
+                            {validated && <div className="invalid-feedback">Please enter a valid Email adddress!</div>}
                             </div>
                             <div className="col-12">
                             <label htmlFor="yourPassword" className="form-label">Password</label>
                             <input type="password" name="password" className="form-control" placeholder="Password" id="yourPassword" required />
-                            <div className="invalid-feedback">Please enter your password!</div>
+                            {validated && <div className="invalid-feedback">Please enter your password!</div>}
                             </div>
                             <div className="pt-2 pb-2">
                             <div className="or">OR</div>
@@ -76,7 +90,7 @@ export default function SignUp() {
                             <div className="form-check">
                                 <input className="form-check-input" name="terms" type="checkbox" value="" id="acceptTerms" required />
                                 <label className="form-check-label" htmlFor="acceptTerms">I agree and accept the <a href="#">terms and conditions</a></label>
-                                <div className="invalid-feedback">You must agree before submitting.</div>
+                                {validated && <div className="invalid-feedback">You must agree before submitting.</div>}
                             </div>
                             </div>
                             <div className="col-12">

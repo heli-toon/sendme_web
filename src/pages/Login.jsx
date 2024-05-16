@@ -1,9 +1,23 @@
+import { useState, useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap'
+import 'bootstrap'
 import logo from "../assets/logo.png";
 
 export default function Login() {
     window.document.title = 'SendMe | Login';
+    const onboardingRef = useRef(null);
+    const [validated, setValidated] = useState(false);
+
+    const handleSubmit = (event) => {
+        
+        const form = onboardingRef.current;
+        form.classList.add("was-validated")
+        if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+            setValidated(true);
+        }
+    };
     return(
         <>
             <section className="login min-vh-100 d-flex flex-column align-items-center justify-content-center">
@@ -21,19 +35,19 @@ export default function Login() {
                         <div className="pt-2 pb-2">
                             <h5 className="card-title text-center pb-0 fs-4">Login to SendMe</h5>
                         </div>
-                        <form className="row g-3 needs-validation" noValidate>
+                        <form className="row g-3 needs-validation" ref={onboardingRef} onSubmit={handleSubmit} noValidate>
                             <div className="col-12">
                             <label htmlFor="yourUsername" className="form-label">Username</label>
                             <div className="input-group has-validation">
                                 <span className="input-group-text" id="inputGroupPrepend">@</span>
                                 <input type="text" name="username" className="form-control" id="yourUsername" placeholder="Username" required />
-                                <div className="invalid-feedback">Please enter your username.</div>
+                                {validated && <div className="invalid-feedback">Please enter your username.</div>}
                             </div>
                             </div>
                             <div className="col-12">
-                            <label htmlFor="yourPassword" className="form-label">Password</label>
-                            <input type="password" name="password" className="form-control" id="yourPassword" placeholder="Password" required />
-                            <div className="invalid-feedback">Please enter your password!</div>
+                                <label htmlFor="yourPassword" className="form-label">Password</label>
+                                <input type="password" name="password" className="form-control" id="yourPassword" placeholder="Password" required />
+                                {validated && <div className="invalid-feedback">Please enter your password!</div>}
                             </div>
                             <div className="pt-2 pb-2">
                             <div className="or">OR</div>
@@ -68,16 +82,16 @@ export default function Login() {
                             </a>
                             </div>
                             <div className="col-12">
-                            <div className="form-check">
-                                <input className="form-check-input" type="checkbox" name="remember" value="true" id="rememberMe" />
-                                <label className="form-check-label" htmlFor="rememberMe">Remember me</label>
-                            </div>
-                            </div>
-                            <div className="col-12">
-                            <button className="btned w-100" type="submit">Login</button>
+                                <div className="form-check">
+                                    <input className="form-check-input" type="checkbox" name="remember" value="true" id="rememberMe" />
+                                    <label className="form-check-label" htmlFor="rememberMe">Remember me</label>
+                                </div>
                             </div>
                             <div className="col-12">
-                            <p className="small mb-0">Don&apos;t have account? <a href="/register">Create an account</a></p>
+                                <button className="btned w-100" type="submit">Login</button>
+                            </div>
+                            <div className="col-12">
+                                <p className="small mb-0">Don&apos;t have account? <a href="/register">Create an account</a></p>
                             </div>
                         </form>
                         </div>

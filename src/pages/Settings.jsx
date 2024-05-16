@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import DashNav from "../components/DashNav"
 import noprofile from "../assets/images/blank-profile-picture.png";
+import TopNav from "../components/TopNav";
 
 export default function Settings() {
     window.document.title = 'SendMe | Settings'
@@ -29,6 +30,7 @@ export default function Settings() {
     return(
         <>
             <DashNav />
+            <TopNav />
             <main id="in">
                 <section className="settings">
                     <h1>Settings & Prefrences</h1>
