@@ -24,7 +24,7 @@ export default function Footer() {
                         <div className="col-lg-2 col-6 footer-links">
                             <h4>Useful Links</h4>
                             <ul>
-                                <li><i className="bi bi-house-door-fill"></i> <a href="#">Home</a></li>
+                                <li><i className="bi bi-house-door-fill"></i> <a href="/">Home</a></li>
                                 <li><i className="bi bi-question-circle-fill"></i> <a href="#">Help</a></li>
                                 <li><i className="bi bi-chat-square-dots-fill"></i> <a href="#">FAQs</a></li>
                                 <li><i className="bi bi-newspaper"></i> <a href="#">Terms of service</a></li>

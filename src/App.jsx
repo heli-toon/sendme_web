@@ -11,6 +11,7 @@ import './styles/main.css'
 import './styles/bootstrap-icons.min.css'
 
 import { useEffect, useState } from 'react'
+import Privacy from './pages/Privacy'
 
 export default function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
@@ -41,6 +42,7 @@ export default function App() {
           <Route path='/nointernet' element={<NoInternet />}></Route>
           <Route path='/login' element={<Login />}></Route>
           <Route path='/register' element={<SignUp />}></Route>
+          <Route path='/privacy-policy' element={<Privacy />}></Route>
         </Routes>
       </BrowserRouter>
     </>

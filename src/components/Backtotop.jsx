@@ -18,7 +18,7 @@ export default function Backtotop() {
   }, []);
     return (
       <>
-        <a ref={toTop} href="#" className="btned back-to-top d-flex align-items-center justify-content-center" title="Back to Top"><i className="ion-arrow-up-b"></i></a>
+        <a ref={toTop} href="#" className="btned back-to-top d-flex align-items-center justify-content-center" title="Back to Top"><i className="bi bi-arrow-up-circle-fill"></i></a>
       </>
     )
 }

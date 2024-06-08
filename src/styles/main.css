@@ -118,7 +118,7 @@ a {
   color: var(--primary);
   text-decoration: none;
 }
-a:hover {color: var(--primary)}
+  a:hover {color: var(--primary); filter: brightness(1.2);}
 ul {
   list-style: none;
   margin: 0;
@@ -572,7 +572,6 @@ main#in .personalpref .profile-img img{align-self:center}
 main#in .personalpref .profile-img input{display:none}
 main#in .personalpref label{
   font-size:1.5rem;
-  font-size:400;
 }
 main#in .personalpref .profile-bio{
   width:100%;
@@ -597,6 +596,7 @@ main#in .settings .themepref{
   display:flex;
   justify-content:space-between;
 }
+main#in .settings .themepref label:first-child{width:85%}
 main#in .settings .form-submit{
   margin-top:2rem;
   display:flex;
@@ -817,9 +817,7 @@ nav .search-box input{
   margin-left:1rem;
   padding:0;
 }
-nav .search-box input::placeholder{
-  color: var(--gray);
-}
+nav .search-box input::placeholder{color: var(--gray) !important;}
 nav .search-box .submit-search{
   display:flex;
   justify-content:center;
@@ -953,7 +951,10 @@ nav .logo img{
 
 
 
-
+/* PRIVACY */
+.privacy a:hover{
+  filter: brightness(1.2);
+}
 /* BLOG */
 /* Breadcrumbs */
 .breadcrumbs {
