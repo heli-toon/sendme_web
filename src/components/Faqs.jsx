@@ -6,11 +6,8 @@ export default function Faqs() {
           <header className="section-header">
             <h2>F.A.Qs</h2>
             <p>
-              We understand that hiring someone to help with a task can be
-              intimidating, which is why we&apos;ve made it easy to find the perfect
-              helper for your needs. Our platform allows you to view profiles,
-              read reviews, and communicate directly with helpers before making
-              a decision. It also makes sure payments are clear-cut and simple.
+              Can&apos;t find what you&apos;re looking for in the F.A.Qs? Don&apos;t worry! Our team is always available to assist you. 
+              Please send us a message with you with your question or concern, and we&apos;ll do our best to provide a prompt and helpful response.
             </p>
           </header>
           <div className="row">

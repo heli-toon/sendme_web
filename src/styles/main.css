@@ -955,6 +955,10 @@ nav .logo img{
 .privacy a:hover{
   filter: brightness(1.2);
 }
+/* ToS */
+.privacy, .tos{
+  text-align: left;
+}
 /* BLOG */
 /* Breadcrumbs */
 .breadcrumbs {
