@@ -89,7 +89,7 @@ export default function SignUp() {
                             <div className="col-12">
                             <div className="form-check">
                                 <input className="form-check-input" name="terms" type="checkbox" value="" id="acceptTerms" required />
-                                <label className="form-check-label" htmlFor="acceptTerms">I agree and accept the <a href="#">terms and conditions</a></label>
+                                <label className="form-check-label" htmlFor="acceptTerms">I agree and accept the <a className='text-decoration-underline' href="/terms">terms and conditions</a></label>
                                 {validated && <div className="invalid-feedback">You must agree before submitting.</div>}
                             </div>
                             </div>
@@ -97,7 +97,7 @@ export default function SignUp() {
                             <button className="btned w-100" type="submit">Create Account</button>
                             </div>
                             <div className="col-12">
-                            <p className="small mb-0">Already have an account? <a href="/login">Log in</a></p>
+                            <p className="small mb-0">Already have an account? <a className='text-decoration-underline' href="/login">Log in</a></p>
                             </div>
                         </form>
                         </div>

@@ -41,17 +41,17 @@ export default function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Dashboard />}></Route>
-          <Route path='/landing' element={<Landing />}></Route>
-          <Route path='/settings' element={<Settings />}></Route>
-          <Route path='/404' element={<Error404 />}></Route>
-          <Route path='/500' element={<Error500 />}></Route>
-          <Route path='/nointernet' element={<NoInternet />}></Route>
-          <Route path='/login' element={<Login />}></Route>
-          <Route path='/register' element={<SignUp />}></Route>
-          <Route path='/privacy-policy' element={<Privacy />}></Route>
           <Route path='/terms' element={<Tos />}></Route>
           <Route path='/blog' element={<Blog />}></Route>
+          <Route path='/' element={<Dashboard />}></Route>
+          <Route path='/login' element={<Login />}></Route>
+          <Route path='/404' element={<Error404 />}></Route>
+          <Route path='/500' element={<Error500 />}></Route>
+          <Route path='/landing' element={<Landing />}></Route>
+          <Route path='/register' element={<SignUp />}></Route>
+          <Route path='/settings' element={<Settings />}></Route>
+          <Route path='/nointernet' element={<NoInternet />}></Route>
+          <Route path='/privacy-policy' element={<Privacy />}></Route>
         </Routes>
       </BrowserRouter>
     </>

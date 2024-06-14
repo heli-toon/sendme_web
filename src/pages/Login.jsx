@@ -91,7 +91,7 @@ export default function Login() {
                                 <button className="btned w-100" type="submit">Login</button>
                             </div>
                             <div className="col-12">
-                                <p className="small mb-0">Don&apos;t have account? <a href="/register">Create an account</a></p>
+                                <p className="small mb-0">Don&apos;t have account? <a className='text-decoration-underline' href="/register">Create an account</a></p>
                             </div>
                         </form>
                         </div>

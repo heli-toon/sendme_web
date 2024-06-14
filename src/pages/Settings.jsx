@@ -39,7 +39,7 @@ export default function Settings() {
                             <li><a href="#personal">Personal</a></li>
                             <li><a href="#themes">Themes</a></li>
                             <li><a href="#">Passwords</a></li>
-                            <li><a href="/feedback">Terms</a></li>
+                            <li><a href="/terms">Terms</a></li>
                         </ul>
                     </div>
                     <div className="settings-body">

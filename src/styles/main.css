@@ -296,7 +296,7 @@ select {
 .dark-toggle-text{
   font-size: 1rem !important;
   padding: 0.7rem 1.4rem !important;
-  width: 85%;
+  width: 60%;
   display: none;
 }
 .navbar-mobile .dark-toggle-text{
@@ -596,7 +596,7 @@ main#in .settings .themepref{
   display:flex;
   justify-content:space-between;
 }
-main#in .settings .themepref label:first-child{width:85%}
+main#in .settings .themepref label:first-child{width:60%;}
 main#in .settings .form-submit{
   margin-top:2rem;
   display:flex;
@@ -1402,6 +1402,70 @@ body.dark .faq .accordion-button:is(.collapsed):after{
 .accordion-flush .accordion-item .accordion-header, 
 .accordion-flush .accordion-item .accordion-button.collapsed {
   border-radius: var(--border-rad-card) !important;
+}
+/*--------------------------------------------------------------
+# Recent Blog Posts
+--------------------------------------------------------------*/
+.recent-blog-posts .post-box {
+  padding: 1.5rem;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: var(--bg-sec);
+  transition: var(--anim-short);
+  border-radius: var(--border-rad-card);
+}
+.recent-blog-posts .post-box .post-img {
+  overflow: hidden;
+  position: relative;
+  border-radius: var(--border-rad-big);
+}
+.recent-blog-posts .post-box .post-img img {
+  transition: var(--anim-mid);
+}
+.recent-blog-posts .post-box .meta {
+  margin-top: 15px;
+}
+.recent-blog-posts .post-box .meta .post-date {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--primary);
+}
+.recent-blog-posts .post-box .meta .post-author {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--primary);
+}
+.recent-blog-posts .post-box .post-title {
+  font-size: 24px;
+  color: var(--primary);
+  font-weight: 700;
+  margin: 15px 0 0 0;
+  position: relative;
+  transition: var(--anim-short);
+}
+.recent-blog-posts .post-box .readmore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  transition: var(--anim-short);
+  margin-top: 15px;
+  padding: 0.8rem !important;
+  width: 60%;
+}
+.recent-blog-posts .post-box .readmore i {
+  line-height: 0;
+  margin-left: 4px;
+  font-size: 18px;
+}
+.recent-blog-posts .post-box:hover .post-title {
+  color: var(--primary);
+}
+.recent-blog-posts .post-box:hover .post-img img {
+  transform: scale(1.1);
 }
 /*--------------------------------------------------------------
 # Waitlist

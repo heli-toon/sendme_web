@@ -1,6 +1,4 @@
-import Footer from "../components/Footer";
-import verba from "../assets/images/verba.png"
-
+import verba from "../assets/images/hero-fullscreen-bg.jpg";
 export default function BlogCollection() {
   return (
     <>
@@ -11,8 +9,8 @@ export default function BlogCollection() {
             <p>Recent posts form my Blog</p>
           </div>
           <div class="row">
-            <div class="col-lg-4">
-              <div class="post-box glassm">
+            <div class="col-lg-4 my-4">
+              <div class="post-box">
                 <div class="post-img">
                   <img src={verba} class="img-fluid" alt="" />
                 </div>
@@ -20,22 +18,21 @@ export default function BlogCollection() {
                   <span class="post-date">Tue, December 12</span>
                 </div>
                 <h3 class="post-title">
-                  Eum ad dolor et. Autem aut fugiat debitis voluptatem
-                  consequuntur sit
+                  Eum ad dolor et. Autem aut fugiat
                 </h3>
                 <p>
                   Illum voluptas ab enim placeat. Adipisci enim velit nulla. Vel
                   omnis laudantium. Asperiores eum ipsa est officiis. Modi
-                  cupiditate exercitationem qui magni est...
+                  cupiditate exercitationem qui magni...
                 </p>
-                <a href="blog-details.html" class="readmore btn-get-started">
+                <a href="blog-details.html" class="readmore btned">
                   <span>Read More</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
             </div>
-            <div class="col-lg-4">
-              <div class="post-box glassm">
+            <div class="col-lg-4 my-4">
+              <div class="post-box">
                 <div class="post-img">
                   <img
                     src={verba}
@@ -47,21 +44,21 @@ export default function BlogCollection() {
                   <span class="post-date">Fri, September 05</span>
                 </div>
                 <h3 class="post-title">
-                  Et repellendus molestiae qui est sed omnis voluptates magnam
+                  Et repellendus molestiae qui est sed
                 </h3>
                 <p>
                   Voluptatem nesciunt omnis libero autem tempora enim ut ipsam
                   id. Odit quia ab eum assumenda. Quisquam omnis aliquid
                   necessitatibus tempora...
                 </p>
-                <a href="blog-details.html" class="readmore btn-get-started">
+                <a href="blog-details.html" class="readmore btned">
                   <span>Read More</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
               </div>
             </div>
-            <div class="col-lg-4">
-              <div class="post-box glassm">
+            <div class="col-lg-4 my-4">
+              <div class="post-box">
                 <div class="post-img">
                   <img
                     src={verba}
@@ -80,7 +77,7 @@ export default function BlogCollection() {
                   laboriosam. Quis omnis repellat sed quae consectetur magnam
                   veritatis...
                 </p>
-                <a href="blog-details.html" class="readmore btn-get-started">
+                <a href="blog-details.html" class="readmore btned">
                   <span>Read More</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
@@ -89,7 +86,6 @@ export default function BlogCollection() {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 }
