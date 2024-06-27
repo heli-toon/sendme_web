@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import DashNav from "../components/DashNav"
 import noprofile from "../assets/images/blank-profile-picture.png";
 import TopNav from "../components/TopNav";
+import { useNavigate } from 'react-router-dom';
 
 export default function Settings() {
     window.document.title = 'SendMe | Settings'
@@ -27,6 +28,12 @@ export default function Settings() {
         setIsDarkTheme(!isDarkTheme);
         localStorage.setItem("isDarkTheme", !isDarkTheme);
     }, [isDarkTheme])
+
+    const navigate = useNavigate();
+
+    const handleBackBtnClick = () => {
+        navigate(-1);
+    };
     return(
         <>
             <DashNav />
@@ -113,9 +120,7 @@ export default function Settings() {
                                     </label>
                                 </div>
                                 <div className="form-submit">
-                                    <a href="/" className="btn btned-sec">
-                                    <i className="bi bi-arrow-left-circle-fill"></i>Back</a
-                                    >
+                                    <a href="/" className="btn btned-sec" onClick={handleBackBtnClick}><i className="bi bi-arrow-left-circle-fill"></i>Back</a>
                                     <button type="submit" className="btned">
                                     <i className="bi bi-floppy2-fill"></i> Save
                                     </button>
