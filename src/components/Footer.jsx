@@ -59,7 +59,7 @@ export default function Footer() {
                         &copy; Copyright 2024 <strong><span>SendMe</span></strong>. All Rights Reserved
                     </div>
                     <div className="credits">
-                        Designed by <a href="/">SendMe</a>
+                        Designed by <a href="/landing">SendMe</a>
                     </div>
                 </div>
             </div>

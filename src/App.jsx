@@ -1,12 +1,12 @@
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
 import Tos from './pages/Tos'
-import Blog from './pages/Blog'
 import Login from './pages/Login'
 import Error404 from './pages/404'
 import Error500 from './pages/500'
 import SignUp from './pages/SignUp'
 import Privacy from './pages/Privacy'
 import Landing from './pages/Landing'
+import Blog0 from './pages/blogs/Blog0'
 import Settings from './pages/Settings'
 import Dashboard from './pages/Dashboard'
 import NoInternet from './pages/NoInternet'
@@ -44,7 +44,6 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/terms' element={<Tos />}></Route>
-          <Route path='/blog' element={<Blog />}></Route>
           {/* <Route path="/" element={
             <ProtectedRoute>
               <Dashboard />
@@ -57,6 +56,7 @@ export default function App() {
           <Route path='/500' element={<Error500 />}></Route>
           <Route path='/landing' element={<Landing />}></Route>
           <Route path='/register' element={<SignUp />}></Route>
+          <Route path='/blog/sendme-intro' element={<Blog0 />}></Route>
           <Route path='/nointernet' element={<NoInternet />}></Route>
           <Route path='/privacy-policy' element={<Privacy />}></Route>
           <Route path='*' element={<Error404 />}></Route>

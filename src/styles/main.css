@@ -124,6 +124,11 @@ ul {
   margin: 0;
   padding: 0;
 }
+mark{
+  background: var(--primary)!important;
+  color: var(--text-color)!important;
+  border-radius: var(--border-rad-card) !important;
+}
 button {cursor: pointer;}
 button,
 input,
@@ -1426,7 +1431,10 @@ body.dark .faq .accordion-button:is(.collapsed):after{
   transition: var(--anim-mid);
 }
 .recent-blog-posts .post-box .meta {
+  justify-content: space-between;
   margin-top: 15px;
+  font-size: .8rem;
+  width: 100%;
 }
 .recent-blog-posts .post-box .meta .post-date {
   font-size: 15px;
@@ -1455,6 +1463,7 @@ body.dark .faq .accordion-button:is(.collapsed):after{
   margin-top: 15px;
   padding: 0.8rem !important;
   width: 60%;
+  color: var(--text-color);
 }
 .recent-blog-posts .post-box .readmore i {
   line-height: 0;

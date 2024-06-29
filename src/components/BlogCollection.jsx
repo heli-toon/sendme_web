@@ -14,8 +14,15 @@ export default function BlogCollection() {
                 <div class="post-img">
                   <img src={verba} class="img-fluid" alt="" />
                 </div>
-                <div class="meta">
-                  <span class="post-date">Tue, December 12</span>
+                <div className="meta d-flex align-items-center">
+                  <div className="meta-date">
+                    <i className="bi bi-calendar mx-1"></i>
+                    <span className="post-date">Tue, June 25, 2024</span>
+                  </div>
+                  <div className="meta-time">
+                    <i className="bi bi-clock mx-1"></i>
+                    <span className="post-date">2.1 min read</span>
+                  </div>
                 </div>
                 <h3 class="post-title">
                   Eum ad dolor et. Autem aut fugiat
@@ -40,8 +47,15 @@ export default function BlogCollection() {
                     alt=""
                   />
                 </div>
-                <div class="meta">
-                  <span class="post-date">Fri, September 05</span>
+                <div className="meta d-flex align-items-center">
+                  <div className="meta-date">
+                    <i className="bi bi-calendar mx-1"></i>
+                    <span className="post-date">Tue, June 25, 2024</span>
+                  </div>
+                  <div className="meta-time">
+                    <i className="bi bi-clock mx-1"></i>
+                    <span className="post-date">2.1 min read</span>
+                  </div>
                 </div>
                 <h3 class="post-title">
                   Et repellendus molestiae qui est sed
@@ -66,8 +80,15 @@ export default function BlogCollection() {
                     alt=""
                   />
                 </div>
-                <div class="meta">
-                  <span class="post-date">Tue, July 27</span>
+                <div className="meta d-flex align-items-center">
+                  <div className="meta-date">
+                    <i className="bi bi-calendar mx-1"></i>
+                    <span className="post-date">Tue, June 25, 2024</span>
+                  </div>
+                  <div className="meta-time">
+                    <i className="bi bi-clock mx-1"></i>
+                    <span className="post-date">2.1 min read</span>
+                  </div>
                 </div>
                 <h3 class="post-title">
                   Quia assumenda est et veritatis aut quae

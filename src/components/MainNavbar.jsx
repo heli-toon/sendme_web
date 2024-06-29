@@ -61,8 +61,8 @@ const MainNavbar = () => {
           </div>
           <nav id="navbar" className={`navbar order-last order-lg-0 ${showNavbarCollapse ? "navbar-mobile" : ""}`} >
             <ul>
-              <li><a className="nav-link scrollto" href="#about">About</a></li>
-              <li><a className="nav-link scrollto" href="#services">Services</a></li>
+              <li><a className="nav-link scrollto" href="/landing#about">About</a></li>
+              <li><a className="nav-link scrollto" href="/landing#services">Services</a></li>
               {/* <li><a className="nav-link scrollto" href="#help">Help</a></li>*/}
               <li><a className="nav-link scrollto btned" title="Waitlist" href="/landing#waitlist">Join</a></li>
               <li className="theme-switcher">
