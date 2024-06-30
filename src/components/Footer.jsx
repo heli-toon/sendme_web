@@ -32,7 +32,7 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div className="col-lg-2 col-6 footer-links">
-                            <h4>Our Services</h4>
+                            <h4>Features</h4>
                             <ul>
                                 <li><i className="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
                                 <li><i className="bi bi-chevron-right"></i> <a href="#">Web </a></li>

@@ -7,6 +7,7 @@ import Waitlist from '../components/Waitlist.jsx'
 import Backtotop from '../components/Backtotop.jsx'
 import MainNavbar from '../components/MainNavbar.jsx'
 import BlogCollection from '../components/BlogCollection.jsx'
+import Team from '../components/Team.jsx'
 
 export default function Landing() {
     window.document.title = 'SendMe - The Ultimate Tasks Marketplace'
@@ -18,6 +19,7 @@ export default function Landing() {
             <Faqs />
             <Waitlist />
             <BlogCollection />
+            <Team />
             <Contact />
             <Footer />
             <Backtotop />
