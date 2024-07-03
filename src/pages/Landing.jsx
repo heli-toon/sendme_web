@@ -1,5 +1,6 @@
 import Hero from '../components/Hero.jsx'
 import Faqs from '../components/Faqs.jsx'
+import Team from '../components/Team.jsx'
 import About from '../components/About.jsx'
 import Footer from '../components/Footer.jsx'
 import Contact from '../components/Contact.jsx'
@@ -7,7 +8,6 @@ import Waitlist from '../components/Waitlist.jsx'
 import Backtotop from '../components/Backtotop.jsx'
 import MainNavbar from '../components/MainNavbar.jsx'
 import BlogCollection from '../components/BlogCollection.jsx'
-import Team from '../components/Team.jsx'
 
 export default function Landing() {
     window.document.title = 'SendMe - The Ultimate Tasks Marketplace'
@@ -16,10 +16,10 @@ export default function Landing() {
             <MainNavbar />
             <Hero />
             <About />
+            <Team />
             <Faqs />
             <Waitlist />
             <BlogCollection />
-            <Team />
             <Contact />
             <Footer />
             <Backtotop />

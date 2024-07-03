@@ -7,7 +7,10 @@ export default function Team() {
                 <div className="container">
                     <header className="section-header">
                         <h2>Team</h2>
-                        <p>Our hard working team</p>
+                        <p>
+                            Our team is dedicated to revolutionizing the way people get tasks done. 
+                            With a passion for innovation and a commitment to excellence, we're building a platform that connects people and gets things done.
+                        </p>
                     </header>
                     <div className="row gy-4">
                         <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
@@ -77,7 +80,7 @@ export default function Team() {
                                 </div>
                                 <div className="member-info">
                                     <h4>Lorem, ipsum.</h4>
-                                    <span>Accountant</span>
+                                    <span>Marketing</span>
                                     <p>Rerum voluptate non adipisci animi distinctio et deserunt amet voluptas. Quia aut aliquid doloremque ut possimus ipsum officia.</p>
                                 </div>
                             </div>

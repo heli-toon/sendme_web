@@ -4,9 +4,9 @@ export default function Faqs() {
       <section id="faq" className="faq">
         <div className="container">
           <header className="section-header">
-            <h2>F.A.Qs</h2>
+            <h2>FAQs</h2>
             <p>
-              Can&apos;t find what you&apos;re looking for in the F.A.Qs? Don&apos;t worry! Our team is always available to assist you. 
+              Can&apos;t find what you&apos;re looking for in the FAQs? Don&apos;t worry! Our team is always available to assist you. 
               Please send us a message with you with your question or concern, and we&apos;ll do our best to provide a prompt and helpful response.
             </p>
           </header>
