@@ -25,7 +25,7 @@ export default function Team() {
                                     </div>
                                 </div>
                                 <div className="member-info">
-                                    <h4>Lorem, ipsum dolor</h4>
+                                    <h4>Ahiabor John</h4>
                                     <span>Chief Executive Officer</span>
                                     <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
                                 </div>
@@ -43,7 +43,7 @@ export default function Team() {
                                 </div>
                             </div>
                             <div className="member-info">
-                                <h4>Lorem 2</h4>
+                                <h4>Daniella Soglo</h4>
                                 <span>Product Manager</span>
                                 <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
                             </div>
@@ -61,7 +61,7 @@ export default function Team() {
                                 </div>
                             </div>
                             <div className="member-info">
-                                <h4>Lorem, ipsum dolor</h4>
+                                <h4>Salay Muhaimin</h4>
                                 <span>CTO</span>
                                 <p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.</p>
                             </div>
@@ -80,7 +80,7 @@ export default function Team() {
                                 </div>
                                 <div className="member-info">
                                     <h4>Lorem, ipsum.</h4>
-                                    <span>Marketing</span>
+                                    <span>Marketing Executive</span>
                                     <p>Rerum voluptate non adipisci animi distinctio et deserunt amet voluptas. Quia aut aliquid doloremque ut possimus ipsum officia.</p>
                                 </div>
                             </div>
