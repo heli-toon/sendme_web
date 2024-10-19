@@ -1,35 +1,33 @@
+import { Link, useLocation } from "react-router-dom";
+
 export default function TopNav() {
+  const location = useLocation();
     return(
         <>
             <nav className="top-navbar">
                 <div className="left-sidenav">
                     <form className="search-box" action="/search" method="POST">
-                    <a
-                        title="Search"
-                        type="submit"
-                        href="#"
-                        onFocus="event.preventDefault()"
-                        onClick="event.preventDefault()"
-                        ><i className="bi bi-search"></i
-                    ></a>
-                    <input
-                        className="search-input"
-                        type="search"
-                        placeholder="Type a search term"
-                        name="username"
-                        title="Search"
-                        id="search"
-                    />
-                    <button title="Submit search" className="submit-search btn" type="submit">
-                        <i className="bi bi-search"></i>
-                    </button>
+                        <Link title="Search" type="submit" to="/" onFocus="event.preventDefault()" onClick="event.preventDefault()">
+                            <i className="bi bi-search"></i>
+                        </Link>
+                        <input
+                            className="search-input"
+                            type="search"
+                            placeholder="Type a search term"
+                            name="username"
+                            title="Search"
+                            id="search"
+                        />
+                        <button title="Submit search" className="submit-search btn" type="submit">
+                            <i className="bi bi-search"></i>
+                        </button>
                     </form>
                 </div>
                 <ul className="top-navbar-nav">
                     <li className="nav-item">
-                    <a href="#" className="nav-icon-button active" title="Home"
-                        ><i className="bi bi-house-door-fill"></i
-                    ></a>
+                        <Link href="/" className="nav-icon-button active" title="Home"
+                            ><i className="bi bi-house-door-fill"></i>
+                        </Link>
                     </li>
                     <li className="nav-item has-dropdown">
                     <a

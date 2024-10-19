@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
 
 export default function DashNav() {
@@ -7,27 +8,27 @@ export default function DashNav() {
           <ul className="dashnavbar-nav">
             <li className="logo">
               <img src={logo} alt="SendMe Logo" />
-              <a title="Dashboard" href="/"className="dashnav-link">
+              <Link title="Dashboard" to="/"className="dashnav-link">
                 <span className="link-text">SendMe</span>
-              </a>
+              </Link>
             </li>
             <li className="dashnav-item">
-              <a title="Dashboard" href="/" className="dashnav-link active">
+              <Link title="Dashboard" to="/" className={location.pathname === '/' ? 'dashnav-link active' : 'dashnav-link '}>
                 <i className="bi-house-door-fill"></i>
                 <span className="link-text">Home</span>
-              </a>
+              </Link>
             </li>
             <li className="dashnav-item">
-              <a title="Save" href="/" className="dashnav-link">
+              <Link title="Save" to="/post" className={location.pathname === '/post' ? 'dashnav-link active' : 'dashnav-link '}>
                 <i className="bi-bookmark"></i>
                 <span className="link-text">Saved</span>
-              </a>
+              </Link>
             </li>
             <li className="dashnav-item">
-              <a title="Settings" href="/settings" className="dashnav-link">
+              <Link title="Settings" to="/settings" className={location.pathname === '/settings' ? 'dashnav-link active' : 'dashnav-link '}>
                 <i className="bi-gear"></i>
                 <span className="link-text">Settings</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
