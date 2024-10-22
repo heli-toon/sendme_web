@@ -10,9 +10,9 @@ export default function Footer() {
                         <div className="col-lg-5 col-md-12 footer-info">
                             <a href="/" className="logo d-flex align-items-center">
                                 <img src={logo} alt="" />
-                                <span>SendMe</span>
+                                <span>Wink</span>
                             </a>
-                            <p>Do you need help with a task? Are you looking for a way to make money doing tasks for others? SendMe is the perfect solution. Post a task or take on a task.</p>
+                            <p>Do you need help with a task? Are you looking for a way to make money doing tasks for others? Wink is the perfect solution. Post a task or take on a task.</p>
                             <div className="social-links mt-3">
                                 <a title="Twitter-X" href="#" className="twitter-x"><i className="bi bi-twitter-x"></i></a>
                                 <a title="Facebook" href="#" className="facebook"><i className="bi bi-facebook"></i></a>
@@ -47,7 +47,7 @@ export default function Footer() {
                                 Accra, Greater Accra <br />
                                 Ghana <br /><br />
                                 <strong>Phone:</strong><a href="tel:+233535760503"> +233 53 576 0503</a><br />
-                                <strong>Email:</strong><a href="mailto:info@sendme.com"> info@sendme.com</a><br />
+                                <strong>Email:</strong><a href="mailto:info@wink.com"> info@wink.com</a><br />
                             </p>
                         </div>
                     </div>
@@ -56,10 +56,10 @@ export default function Footer() {
             <div className="footer-bottom">
                 <div className="container">
                     <div className="copyright">
-                        &copy; Copyright 2024 <strong><span>SendMe</span></strong>. All Rights Reserved
+                        &copy; Copyright 2024 <strong><span>Wink</span></strong>. All Rights Reserved
                     </div>
                     <div className="credits">
-                        Designed by <a href="/landing">SendMe</a>
+                        Designed by <a href="/landing">Wink</a>
                     </div>
                 </div>
             </div>

@@ -4,7 +4,7 @@ import 'bootstrap'
 import logo from "../assets/logo.png";
 
 export default function Login() {
-    window.document.title = 'SendMe | Login';
+    window.document.title = 'Wink | Login';
     const onboardingRef = useRef(null);
     const [validated, setValidated] = useState(false);
 
@@ -27,13 +27,13 @@ export default function Login() {
                     <div className="d-flex justify-content-center py-4">
                         <a href="/landing" className="logo d-flex align-items-center w-auto">
                         <img src={logo} alt="" />
-                        <span className="d-none d-lg-block">SendMe</span>
+                        <span className="d-none d-lg-block">Wink</span>
                         </a>
                     </div>
                     <div className="card mb-3">
                         <div className="onboarding card-body">
                         <div className="pt-2 pb-2">
-                            <h5 className="card-title text-center pb-0 fs-4">Login to SendMe</h5>
+                            <h5 className="card-title text-center pb-0 fs-4">Login to Wink</h5>
                         </div>
                         <form className="row g-3 needs-validation" ref={onboardingRef} onSubmit={handleSubmit} noValidate>
                             <div className="col-12">

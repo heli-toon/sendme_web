@@ -1,6 +1,6 @@
 import errorimage from '../assets/images/error-page.png'
 export default function Error404() {
-  window.document.title = 'SendMe | Page Not Found'
+  window.document.title = 'Wink | Page Not Found'
   return (
     <>
       <section className="error-page min-vh-100 d-flex flex-column align-items-center justify-content-center" id="404">

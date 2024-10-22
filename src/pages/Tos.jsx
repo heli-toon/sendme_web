@@ -2,7 +2,7 @@ import Footer from '../components/Footer.jsx'
 import MainNavbar from '../components/MainNavbar.jsx'
 
 export default function Tos() {
-    window.document.title = 'SendMe | Terms of Service'
+    window.document.title = 'Wink | Terms of Service'
     return(
         <>
             <MainNavbar />
@@ -11,7 +11,7 @@ export default function Tos() {
                     <header>
                         <h2>Terms of Serivce</h2>
                         <p>
-                            Welcome to SendMe, a web app provided by SendMe Inc. (hereinafter referred to as &quot;we&quot; or &quot;us&quot;). 
+                            Welcome to Wink, a web app provided by Wink Inc. (hereinafter referred to as &quot;we&quot; or &quot;us&quot;). 
                             These Terms of Service (ToS) outline the rules and guidelines for using our Service, and by accessing or using our Service, you agree to be bound by these ToS.
                         </p>
                     </header>
@@ -84,7 +84,7 @@ export default function Tos() {
                     <article>
                         <h4>Contact Us</h4>
                         <p>
-                        If you have questions or concerns about these ToS or our Service, please contact us at <a href="mailto:hello@sendme.com">hello@sendme.com</a>.
+                        If you have questions or concerns about these ToS or our Service, please contact us at <a href="mailto:hello@wink.com">hello@wink.com</a>.
                         </p>
                         <p>By using our Service, you acknowledge that you have read, understand, and agree to be bound by these ToS. If you do not agree, please do not use our Service.</p>
                         <p>

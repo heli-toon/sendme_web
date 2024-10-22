@@ -56,7 +56,7 @@ export default function App() {
           <Route path='/500' element={<Error500 />}></Route>
           <Route path='/landing' element={<Landing />}></Route>
           <Route path='/register' element={<SignUp />}></Route>
-          <Route path='/blog/sendme-intro' element={<Blog0 />}></Route>
+          <Route path='/blog/wink-intro' element={<Blog0 />}></Route>
           <Route path='/nointernet' element={<NoInternet />}></Route>
           <Route path='/privacy-policy' element={<Privacy />}></Route>
           <Route path='*' element={<Error404 />}></Route>

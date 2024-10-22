@@ -1,7 +1,7 @@
 import errorimage from '../assets/images/error-page.png'
 
 export default function Error500() {
-  window.document.title = 'SendMe | Server Error'
+  window.document.title = 'Wink | Server Error'
   return (
     <>
       <section className="error-page min-vh-100 d-flex flex-column align-items-center justify-content-center" id="500">

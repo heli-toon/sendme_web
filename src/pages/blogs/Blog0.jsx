@@ -5,7 +5,7 @@ import MainNavbar from '../../components/MainNavbar';
 import Backtotop from '../../components/Backtotop';
 
 export default function Blog0() {
-    window.document.title = "SendMe | SendMe Intro";
+    window.document.title = "Wink | Wink Intro";
     const [searchText, setSearchText] = useState('');
     const [paragraphs, setParagraphs] = useState([]);
 
@@ -32,11 +32,11 @@ export default function Blog0() {
             <div className="breadcrumbs">
                 <div className="container">
                     <div className="d-flex justify-content-between align-items-center">
-                        <h2>SendMe Intro</h2>
+                        <h2>Wink Intro</h2>
                         <ol>
                             <li><a href="/">Home</a></li>
                             <li><a href="/blog/">Blog</a></li>
-                            <li>SendMe Intro</li>
+                            <li>Wink Intro</li>
                         </ol>
                     </div>
                 </div>

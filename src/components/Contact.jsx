@@ -25,7 +25,7 @@ export default function Contact() {
                             <i className="bi bi-envelope flex-shrink-0"></i>
                             <div>
                             <h4>Email</h4>
-                            <p><a className="contlink" href="mailto:hello@sendme.com">hello@sendme.com</a></p>
+                            <p><a className="contlink" href="mailto:hello@wink.com">hello@wink.com</a></p>
                             </div>
                         </div>
                         <div className="info-item d-flex">

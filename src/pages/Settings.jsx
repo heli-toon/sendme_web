@@ -5,7 +5,7 @@ import TopNav from "../components/TopNav";
 import { useNavigate } from 'react-router-dom';
 
 export default function Settings() {
-    window.document.title = 'SendMe | Settings'
+    window.document.title = 'Wink | Settings'
     
     const [isDarkTheme, setIsDarkTheme] = useState(false);
 

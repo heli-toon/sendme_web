@@ -10,7 +10,7 @@ import MainNavbar from '../components/MainNavbar.jsx'
 import BlogCollection from '../components/BlogCollection.jsx'
 
 export default function Landing() {
-    window.document.title = 'SendMe - The Ultimate Tasks Marketplace'
+    window.document.title = 'Wink - The Ultimate Tasks Marketplace'
     return(
         <>
             <MainNavbar />

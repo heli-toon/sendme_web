@@ -55,7 +55,7 @@ const MainNavbar = () => {
             </a>
             <h1 className="logo me-auto me-lg-0">
               <a title="Landing" href="/">
-                SendMe
+                Wink
               </a>
             </h1>
           </div>

@@ -21,7 +21,7 @@ export default function Faqs() {
                       data-bs-toggle="collapse"
                       data-bs-target="#faq-content-1"
                     >
-                      How much does it cost to use SendMe?
+                      How much does it cost to use Wink?
                     </button>
                   </h2>
                   <div
@@ -63,7 +63,7 @@ export default function Faqs() {
                       data-bs-toggle="collapse"
                       data-bs-target="#faq-content-3"
                     >
-                      What types of tasks can I post on SendMe?
+                      What types of tasks can I post on Wink?
                     </button>
                   </h2>
                   <div
@@ -85,7 +85,7 @@ export default function Faqs() {
                       data-bs-toggle="collapse"
                       data-bs-target="#faq-content-4"
                     >
-                      What makes SendMe different from other platforms?
+                      What makes Wink different from other platforms?
                     </button>
                   </h2>
                   <div
@@ -94,7 +94,7 @@ export default function Faqs() {
                     data-bs-parent="#faqlist1"
                   >
                     <div className="accordion-body">
-                      SendMe is a social marketplace focused on small tasks
+                      Wink is a social marketplace focused on small tasks
                       making it easier to connect and interact
                     </div>
                   </div>
@@ -133,7 +133,7 @@ export default function Faqs() {
                       data-bs-toggle="collapse"
                       data-bs-target="#faq2-content-2"
                     >
-                      What if I don&apos;t have a computer, can I still use SendMe?
+                      What if I don&apos;t have a computer, can I still use Wink?
                     </button>
                   </h2>
                   <div
@@ -142,7 +142,7 @@ export default function Faqs() {
                     data-bs-parent="#faqlist2"
                   >
                     <div className="accordion-body">
-                      SendMe is accessible any device with an internet
+                      Wink is accessible any device with an internet
                       connection and a web browser.
                     </div>
                   </div>

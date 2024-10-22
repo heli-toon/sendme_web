@@ -4,7 +4,7 @@ import 'bootstrap'
 import logo from "../assets/logo.png";
 
 export default function SignUp() {
-    window.document.title = 'SendMe | Register';
+    window.document.title = 'Wink | Register';
     const onboardingRef = useRef(null);
     const [validated, setValidated] = useState(false);
 
@@ -26,8 +26,8 @@ export default function SignUp() {
                     <div className="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
                     <div className="d-flex justify-content-center py-4">
                         <a href="/register" className="logo d-flex align-items-center w-auto">
-                        <img src={logo} alt="SendMe Logo" />
-                        <span className="d-none d-lg-block">SendMe</span>
+                        <img src={logo} alt="Wink Logo" />
+                        <span className="d-none d-lg-block">Wink</span>
                         </a>
                     </div>
                     <div className="card mb-3">

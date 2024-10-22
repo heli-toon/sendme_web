@@ -1,7 +1,7 @@
 import errorimage from '../assets/images/error-page.png'
 
 export default function NoInternet() {
-    window.document.title = 'SendMe | No Internet';
+    window.document.title = 'Wink | No Internet';
     return(
         <>
             <section className="error-page min-vh-100 d-flex flex-column align-items-center justify-content-center" id="nointernet">

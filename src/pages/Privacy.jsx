@@ -2,7 +2,7 @@ import Footer from '../components/Footer.jsx'
 import MainNavbar from '../components/MainNavbar.jsx'
 
 export default function Privacy() {
-    window.document.title = 'SendMe | Privacy Policy'
+    window.document.title = 'Wink | Privacy Policy'
     return(
         <>
             <MainNavbar />
@@ -11,7 +11,7 @@ export default function Privacy() {
                     <header>
                         <h2>Privacy Policy</h2>
                         <p>
-                            At SendMe, we respect your privacy and are committed to protecting your personal information. 
+                            At Wink, we respect your privacy and are committed to protecting your personal information. 
                             This privacy policy explains how we collect, use, disclose, and manage user data.
                         </p>
                     </header>
@@ -47,7 +47,7 @@ export default function Privacy() {
                         <h4>User Rights</h4>
                         <p>
                             Users have the right to access, correct, or delete their personal information. 
-                            They can exercise these rights by contacting us at <a href="mailto:hello@sendme.com">hello@sendme.com</a>.
+                            They can exercise these rights by contacting us at <a href="mailto:hello@wink.com">hello@wink.com</a>.
                         </p>
                     </article>
                     <article>
@@ -60,7 +60,7 @@ export default function Privacy() {
                     <article>
                         <h4>Contact Us</h4>
                         <p>
-                            If you have privacy-related questions or concerns, please contact us at <a href="mailto:hello@sendme.com">hello@sendme.com</a>.
+                            If you have privacy-related questions or concerns, please contact us at <a href="mailto:hello@wink.com">hello@wink.com</a>.
                         </p>
                         <p>
                             Effective Date: 1st July, 2024
