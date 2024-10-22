@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 
 export default function TopNav() {
-  const location = useLocation();
+    const location = useLocation();
     return(
         <>
             <nav className="top-navbar">
@@ -25,7 +25,7 @@ export default function TopNav() {
                 </div>
                 <ul className="top-navbar-nav">
                     <li className="nav-item">
-                        <Link href="/" className="nav-icon-button active" title="Home"
+                        <Link to="/" className="nav-icon-button active" title="Home"
                             ><i className="bi bi-house-door-fill"></i>
                         </Link>
                     </li>
@@ -40,30 +40,26 @@ export default function TopNav() {
                     ></a>
                     <ul className="nav-dropdown">
                         <li className="nav-dropdown-menu-item">
-                        <a href="/settings"><i className="bi bi-gear-fill"></i> Settings</a>
+                        <Link to="/settings"><i className="bi bi-gear-fill"></i> Settings</Link>
                         </li>
                         <li className="nav-dropdown-menu-item">
-                        <a href="/profile/{{user.username}}"
-                            ><i className="bi bi-person-fill"></i> Profile</a
-                        >
+                        <Link to="/profile/{{user.username}}"
+                            ><i className="bi bi-person-fill"></i> Profile</Link>
                         </li>
                         <li className="nav-dropdown-menu-item">
-                        <a href="/feedback"
-                            ><i className="bi bi-chat-square-dots-fill"></i> Feedback</a
-                        >
+                        <Link to="/feedback"
+                            ><i className="bi bi-chat-square-dots-fill"></i> Feedback</Link>
                         </li>
                         <li className="nav-dropdown-menu-item">
-                        <a href="/chat"
-                            ><i className="bi bi-chat-left-text-fill"></i> Chat</a
-                        >
+                            <Link to="/chat">
+                                <i className="bi bi-chat-left-text-fill"></i> Chat
+                            </Link>
                         </li>
                         <li className="nav-dropdown-menu-item">
-                        <a href="/games"
-                            ><i className="bi bi-joystick"></i> Games</a
-                        >
+                        <Link to="/games"><i className="bi bi-joystick"></i> Games</Link>
                         </li>
                         <li className="nav-dropdown-menu-item">
-                        <a href="/login"><i className="bi bi-door-open-fill"></i> Log Out</a>
+                            <Link to="/login"><i className="bi bi-door-open-fill"></i> Log Out</Link>
                         </li>
                     </ul>
                     </li>

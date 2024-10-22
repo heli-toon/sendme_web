@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const MainNavbar = () => {
   const [showNavbarCollapse, setShowNavbarCollapse] = useState(false);
@@ -50,13 +51,13 @@ const MainNavbar = () => {
       <header id="header" className="fixed-top" ref={navbarRef}>
         <div className="header-wrapper container d-flex align-items-center justify-content-lg-between space-between">
           <div className="d-flex flex-row align-items-center justify-content-center">
-            <a className="logo me-auto me-lg-0" title="Home" href="/landing#">
+            <Link className="logo me-auto me-lg-0" title="Home" href="/landing#">
               <img src={logo} alt="" className="img-fluid" />
-            </a>
+            </Link>
             <h1 className="logo me-auto me-lg-0">
-              <a title="Landing" href="/">
+              <Link title="Landing" href="/">
                 Wink
-              </a>
+              </Link>
             </h1>
           </div>
           <nav id="navbar" className={`navbar order-last order-lg-0 ${showNavbarCollapse ? "navbar-mobile" : ""}`} >
