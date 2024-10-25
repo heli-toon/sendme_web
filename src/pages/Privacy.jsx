@@ -47,7 +47,7 @@ export default function Privacy() {
                         <h4>User Rights</h4>
                         <p>
                             Users have the right to access, correct, or delete their personal information. 
-                            They can exercise these rights by contacting us at <a href="mailto:hello@wink.com">hello@wink.com</a>.
+                            They can exercise these rights by contacting us at <a href="mailto:inquries.wink@gmail.com">inquries.wink@gmail.com</a>.
                         </p>
                     </article>
                     <article>
@@ -60,7 +60,7 @@ export default function Privacy() {
                     <article>
                         <h4>Contact Us</h4>
                         <p>
-                            If you have privacy-related questions or concerns, please contact us at <a href="mailto:hello@wink.com">hello@wink.com</a>.
+                            If you have privacy-related questions or concerns, please contact us at <a href="mailto:inquries.wink@gmail.com">inquries.wink@gmail.com</a>.
                         </p>
                         <p>
                             Effective Date: 1st July, 2024
