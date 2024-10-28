@@ -47,7 +47,7 @@ export default function Footer() {
                                 Accra, Greater Accra <br />
                                 Ghana <br /><br />
                                 <strong>Phone:</strong><a href="tel:+233535760503"> +233 53 576 0503</a><br />
-                                <strong>Email:</strong><a href="mailto:inquries.wink@gmail.com"> inquries.wink@gmail.com</a><br />
+                                <strong>Email:</strong><a href="mailto:inquiries.wink@gmail.com"> inquiries.wink@gmail.com</a><br />
                             </p>
                         </div>
                     </div>

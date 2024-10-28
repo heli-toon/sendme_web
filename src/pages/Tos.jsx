@@ -84,7 +84,7 @@ export default function Tos() {
                     <article>
                         <h4>Contact Us</h4>
                         <p>
-                        If you have questions or concerns about these ToS or our Service, please contact us at <a href="mailto:inquries.wink@gmail.com">inquries.wink@gmail.com</a>.
+                        If you have questions or concerns about these ToS or our Service, please contact us at <a href="mailto:inquiries.wink@gmail.com">inquiries.wink@gmail.com</a>.
                         </p>
                         <p>By using our Service, you acknowledge that you have read, understand, and agree to be bound by these ToS. If you do not agree, please do not use our Service.</p>
                         <p>
