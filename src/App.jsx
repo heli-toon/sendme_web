@@ -1,5 +1,6 @@
-import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Tos from './pages/Tos'
+import Post from './pages/Post'
 import Login from './pages/Login'
 import Error404 from './pages/404'
 import Error500 from './pages/500'
@@ -15,11 +16,6 @@ import './styles/main.css'
 import './styles/bootstrap-icons.min.css'
 
 import { useEffect, useState } from 'react'
-
-function Logout() {
-  localStorage.clear('token')
-  return <Navigate to="/login" />
-}
 
 export default function App() {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
@@ -51,6 +47,7 @@ export default function App() {
           }
         /> */}
           <Route path='/' element={<Dashboard />}></Route>
+          <Route path='/post' element={<Post />}></Route>
           <Route path='/settings' element={<Settings />}></Route>
           <Route path='/login' element={<Login />}></Route>
           <Route path='/500' element={<Error500 />}></Route>

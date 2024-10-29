@@ -622,7 +622,7 @@ main{
   padding-top:7em;
 }
 nav.dashnavbar .logo{
-  text-align:center;
+  text-align:left;
   background:var(--bg-teri);
   width:100%;
   justify-content:center;
@@ -679,17 +679,10 @@ nav.dashnavbar .logo img{
     margin:0;
   }
   .dashnav-item{flex-direction:column}
-  main{margin:0}
+  main{margin:70px 1rem 2rem!important}
   header.dashboard-nav{
     margin:0;
     justify-content:space-around !important;
-  }
-  header.dashboard-nav .logo{
-    display:inline;
-    display:flex;
-    align-items:center;
-    justify-self:center;
-    justify-content:center;
   }
   header.dashboard-nav .logo .logo-text{display:none}
 }

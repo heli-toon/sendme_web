@@ -14,19 +14,19 @@ export default function DashNav() {
             </li>
             <li className="dashnav-item">
               <Link title="Dashboard" to="/" className={location.pathname === '/' ? 'dashnav-link active' : 'dashnav-link '}>
-                <i className="bi-house-door-fill"></i>
+                <i className={location.pathname === '/' ? 'bi-house-door-fill' : 'bi-house-door'}></i>
                 <span className="link-text">Home</span>
               </Link>
             </li>
             <li className="dashnav-item">
-              <Link title="Save" to="/post" className={location.pathname === '/post' ? 'dashnav-link active' : 'dashnav-link '}>
-                <i className="bi-bookmark"></i>
-                <span className="link-text">Saved</span>
+              <Link title="Post" to="/post" className={location.pathname === '/post' ? 'dashnav-link active' : 'dashnav-link '}>
+                <i className={location.pathname === '/post' ? 'bi-plus-circle-fill' : 'bi-plus-circle'}></i>
+                <span className="link-text">Post</span>
               </Link>
             </li>
             <li className="dashnav-item">
               <Link title="Settings" to="/settings" className={location.pathname === '/settings' ? 'dashnav-link active' : 'dashnav-link '}>
-                <i className="bi-gear"></i>
+                <i className={location.pathname === '/settings' ? 'bi-gear-fill' : 'bi-gear'}></i>
                 <span className="link-text">Settings</span>
               </Link>
             </li>

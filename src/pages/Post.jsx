@@ -1,8 +1,8 @@
 import TopNav from "../components/TopNav";
 import DashNav from "../components/DashNav"
 
-export default function Dashboard() {
-    window.document.title = 'Wink - Dashboard';
+export default function Post() {
+    window.document.title = 'Wink - Post';
     return(
         <>
             <DashNav />

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Footer from "../../components/Footer";
 import map from "../../assets/images/hero-fullscreen-bg.jpg";
 import MainNavbar from '../../components/MainNavbar';
@@ -62,8 +62,8 @@ export default function Blog0() {
                                     </p>
                                     <h3>The Coding Process</h3>
                                     <p className='paragraph'>
-                                        Coding refers to the act of writing code in a programming language to create a software, app, or website. It's the process of translating human instructions into a language that computers can understand. Think of coding as writing a recipe for your computer to follow. 
-                                        A coder's primary focus is on implementing a plan, using programming languages like Python, Java, HTML or C++ to bring a design to life.
+                                        Coding refers to the act of writing code in a programming language to create a software, app, or website. It&amp;s the process of translating human instructions into a language that computers can understand. Think of coding as writing a recipe for your computer to follow. 
+                                        A coder&amp;s primary focus is on implementing a plan, using programming languages like Python, Java, HTML or C++ to bring a design to life.
                                     </p>
                                     <blockquote>
                                         <p className='paragraph'>
@@ -73,7 +73,7 @@ export default function Blog0() {
                                     <h3>The Programming Process</h3>
                                     <p className='paragraph'>
                                         Programming is the broader process of designing, writing, testing, and maintaining software, apps, or websites. It encompasses not only coding but also problem-solving, algorithm development, and software engineering. 
-                                        Programming is like creating a blueprint for a house, including the design, materials, and construction process. A programmer's role is to create the plan itself, considering the overall architecture, functionality, and performance of the software.
+                                        Programming is like creating a blueprint for a house, including the design, materials, and construction process. A programmer&amp;s role is to create the plan itself, considering the overall architecture, functionality, and performance of the software.
                                     </p>
                                     <h3>Similarities</h3>
                                     <ul className='paragraph'>
@@ -101,12 +101,12 @@ export default function Blog0() {
                                     <p className='paragraph'>
                                         In conclusion, coding and programming are two interconnected yet distinct concepts in software development. While coding focuses on implementing a plan, programming encompasses the entire process of designing, developing, and maintaining software. 
                                         Understanding both terms will help you appreciate the complexity and beauty of software development. 
-                                        Whether you're a beginner or an experienced developer, recognizing the differences between coding and programming will enhance your skills and perspective in the world of software development.
+                                        Whether you&amp;re a beginner or an experienced developer, recognizing the differences between coding and programming will enhance your skills and perspective in the world of software development.
                                     </p>
                                     <h3>Final Thoughts</h3>
                                     <p className='paragraph'>
                                         In the world of software development, coding and programming are fundamental concepts that work together to create innovative solutions. 
-                                        By understanding the similarities and differences between these two terms, you'll be better equipped to navigate the exciting world of software development. <br /><br />
+                                        By understanding the similarities and differences between these two terms, you&amp;ll be better equipped to navigate the exciting world of software development. <br /><br />
                                         Happy coding and programming 😁!
                                     </p>
                                 </div>
@@ -132,7 +132,7 @@ export default function Blog0() {
                                         <a href="https://www.instagram.com/heli.toon/"><i className="bi bi-instagram"></i></a>
                                     </div>
                                     <p>
-                                        I'm a passionate web developer dedicated to crafting exceptional online experiences. With expertise in cutting-edge technologies, I create visually stunning and user-friendly websites and apps that drive results.
+                                        I&amp;m a passionate web developer dedicated to crafting exceptional online experiences. With expertise in cutting-edge technologies, I create visually stunning and user-friendly websites and apps that drive results.
                                     </p>
                                 </div>
                             </div>  

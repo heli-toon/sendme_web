@@ -9,7 +9,7 @@ export default function Team() {
                         <h2>Team</h2>
                         <p>
                             Our team is dedicated to revolutionizing the way people get tasks done. 
-                            With a passion for innovation and a commitment to excellence, we're building a platform that connects people and gets things done.
+                            With a passion for innovation and a commitment to excellence, we&amp;re building a platform that connects people and gets things done.
                         </p>
                     </header>
                     <div className="row gy-4">

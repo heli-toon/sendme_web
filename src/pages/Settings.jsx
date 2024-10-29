@@ -62,7 +62,6 @@ export default function Settings() {
                                     <label htmlFor="real_name"><i className="bi bi-person-fill"></i> Full Name</label>
                                     <input type="text" id="real_name" placeholder="Full Name" name="real_name" value="{{user_profile.real_name}}" />
                                 </div>
-                                
                                 <div className="profile-fullname">
                                     <label htmlFor="phone" name="phone"><i className="bi bi-phone"></i> Phone Number</label>
                                     <input 
@@ -76,12 +75,7 @@ export default function Settings() {
                                 </div>
                                 <div className="profile-bio">
                                     <label htmlFor="about"><i className="bi bi-newspaper"></i> Bio</label>
-                                    <textarea
-                                    id="about"
-                                    name="bio"
-                                    placeholder="Say something about yourself..."
-                                    rows="4"
-                                    > user_profile.bio</textarea>
+                                    <textarea id="about" name="bio" placeholder="Say something about yourself..." rows="4"> user_profile.bio</textarea>
                                 </div>
                                 <div className="profile-gender">
                                     <label htmlFor="gender"><i className="bi bi-gender-ambiguous"></i> Gender</label>
