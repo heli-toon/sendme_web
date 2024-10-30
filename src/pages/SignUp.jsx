@@ -22,7 +22,7 @@ export default function SignUp() {
       <section className="register min-vh-100 d-flex flex-column align-items-center justify-content-center">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+            <div className="col-lg-6 col-md-6 d-flex flex-column align-items-center justify-content-center">
               <div className="d-flex justify-content-center py-4">
                 <a
                   href="/register"
@@ -39,12 +39,7 @@ export default function SignUp() {
                       Create Account
                     </h5>
                   </div>
-                  <form
-                    className="row g-3 needs-validation"
-                    ref={onboardingRef}
-                    onSubmit={handleSubmit}
-                    noValidate
-                  >
+                  <form className="row g-3 needs-validation" ref={onboardingRef} onSubmit={handleSubmit} noValidate>
                     <div className="col-12">
                       <label htmlFor="yourEmail" className="form-label">
                         Your Email

@@ -22,7 +22,7 @@ export default function Login() {
       <section className="login min-vh-100 d-flex flex-column align-items-center justify-content-center">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
+            <div className="col-lg-6 col-md-6 d-flex flex-column align-items-center justify-content-center">
               <div className="d-flex justify-content-center py-4">
                 <a href="/landing" className="logo d-flex align-items-center w-auto">
                   <img src={logo} alt="" />

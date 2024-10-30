@@ -335,8 +335,9 @@ input:checked + .slider:before{transform:translateX(26px)}
   background:var(--bg-sec);
   color:var(--text-color);
   border-radius:var(--bg-sec);
+  box-shadow: var(--box-shadow);
 }
-.card{border-color:var(--bg-sec)}
+.card{border-color:var(--bg-sec);}
 .onboarding label{
   width:100%;
   text-align:left;
@@ -517,6 +518,7 @@ main#in .settings .settings-body{
   border-radius:var(--border-rad-card);
   padding:2rem;
   width:100%;
+  box-shadow: var(--box-shadow);
 }
 main#in .settings-body .personalpref{display:flex}
 main#in .settings-body .personalpref form{
@@ -571,6 +573,7 @@ nav.dashnavbar{
   color:var(--text-color);
   transition:width var(--anim-short) ease;
   box-shadow:0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  z-index: 2;
 }
 .dashnavbar-nav{
   list-style:none;
@@ -679,7 +682,7 @@ nav.dashnavbar .logo img{
     margin:0;
   }
   .dashnav-item{flex-direction:column}
-  main{margin:70px 1rem 2rem!important}
+  main{margin:70px 1rem 6rem!important}
   header.dashboard-nav{
     margin:0;
     justify-content:space-around !important;
@@ -1274,6 +1277,7 @@ body.dark .faq .accordion-button:is(.collapsed):after{filter:invert(1)}
   background:var(--bg-sec);
   transition:var(--anim-short);
   border-radius:var(--border-rad-card);
+  box-shadow: var(--box-shadow);
 }
 .recent-blog-posts .post-box .post-img{
   overflow:hidden;

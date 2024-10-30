@@ -1,23 +1,15 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function TopNav() {
-    const location = useLocation();
     return(
         <>
             <nav className="top-navbar">
                 <div className="left-sidenav">
                     <form className="search-box" action="/search" method="POST">
-                        <Link title="Search" type="submit" to="/" onFocus="event.preventDefault()" onClick="event.preventDefault()">
+                        <Link title="Search" type="submit" to="/">
                             <i className="bi bi-search"></i>
                         </Link>
-                        <input
-                            className="search-input"
-                            type="search"
-                            placeholder="Type a search term"
-                            name="username"
-                            title="Search"
-                            id="search"
-                        />
+                        <input className="search-input" type="search" placeholder="Type a search term" name="username" title="Search" id="search" />
                         <button title="Submit search" className="submit-search btn" type="submit">
                             <i className="bi bi-search"></i>
                         </button>
@@ -30,14 +22,9 @@ export default function TopNav() {
                         </Link>
                     </li>
                     <li className="nav-item has-dropdown">
-                    <a
-                        href="#"
-                        className="nav-icon-button"
-                        title="More"
-                        onFocus="event.preventDefault()"
-                        onClick="event.preventDefault()"
-                        ><i className="bi bi-caret-down-fill"></i
-                    ></a>
+                    <a href="#" className="nav-icon-button" title="More">
+                        <i className="bi bi-caret-down-fill"></i>
+                    </a>
                     <ul className="nav-dropdown">
                         <li className="nav-dropdown-menu-item">
                         <Link to="/settings"><i className="bi bi-gear-fill"></i> Settings</Link>
