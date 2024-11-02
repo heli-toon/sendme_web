@@ -43,7 +43,7 @@ export default function Team() {
                                 </div>
                             </div>
                             <div className="member-info">
-                                <h4>Daniella Soglo</h4>
+                                <h4>Ankamah Kofi Prince</h4>
                                 <span>Product Manager</span>
                                 <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
                             </div>
@@ -79,7 +79,7 @@ export default function Team() {
                                     </div>
                                 </div>
                                 <div className="member-info">
-                                    <h4>Lorem, ipsum.</h4>
+                                    <h4>Daniella Sogolo</h4>
                                     <span>Marketing Executive</span>
                                     <p>Rerum voluptate non adipisci animi distinctio et deserunt amet voluptas. Quia aut aliquid doloremque ut possimus ipsum officia.</p>
                                 </div>

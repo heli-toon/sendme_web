@@ -523,7 +523,8 @@ main#in .settings .settings-body{
   box-shadow: var(--box-shadow);
 }
 main#in .settings-body .personalpref{display:flex}
-main#in .settings-body .personalpref form{
+main#in .settings-body .personalpref form,
+main#in .settings-body .securitypref form{
   display:flex;
   flex-direction:column;
   width:100%;
@@ -535,7 +536,7 @@ main#in .personalpref .profile-img{
 }
 main#in .personalpref .profile-img img{align-self:center}
 main#in .personalpref .profile-img input{display:none}
-main#in .personalpref label{font-size:1.5rem}
+main#in .personalpref label, main#in .settings-body .securitypref label{font-size:1.5rem}
 main#in .personalpref .profile-bio{
   width:100%;
   margin-top:1.5rem;
