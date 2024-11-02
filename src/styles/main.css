@@ -136,13 +136,15 @@ textarea{
 }
 input,
 textarea,
-select{
+select, 
+progress{
   caret-color:var(--primary);
   resize:none;
   padding:1em;
   background:var(--bg-teri);
   border-radius:var(--border-rad-card);
   margin:1em 0;
+  accent-color: var(--primary);
 }
 .btned{
   outline:none;
@@ -717,6 +719,7 @@ nav.top-navbar{
   position:fixed;
   width:100%;
   top:0;
+  z-index: 1;
 }
 nav .left-sidenav{
   display:flex;
@@ -1643,3 +1646,26 @@ body.dark .faq .accordion-button:is(.collapsed):after{filter:invert(1)}
   margin-bottom:2em;
 }
 @media (min-width:992px){.error-page img{max-width:50%}}
+
+body.dark .post-item{
+  color: var(--white1);
+}
+.post-item{
+  border-radius: var(--border-rad-card);
+}
+.post-item h5{
+  letter-spacing: normal;
+}
+.post-item .price{
+  filter: brightness(2.0);
+}
+.post-item button{
+  background-color: var(--text-color) !important;
+}
+.post-item button:hover{
+  background-color: var(--text-color) !important;
+}
+.post-item .time{
+  padding: .2rem;
+  border-radius: var(--border-rad-card);
+}

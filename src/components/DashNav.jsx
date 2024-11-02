@@ -25,6 +25,12 @@ export default function DashNav() {
               </Link>
             </li>
             <li className="dashnav-item">
+              <Link title="Chat" to="/chat" className={location.pathname === '/chat' ? 'dashnav-link active' : 'dashnav-link '}>
+                <i className={location.pathname === '/chat' ? 'bi-chat-dots-fill' : 'bi-chat-dots'}></i>
+                <span className="link-text">Chat</span>
+              </Link>
+            </li>
+            <li className="dashnav-item">
               <Link title="Settings" to="/settings" className={location.pathname === '/settings' ? 'dashnav-link active' : 'dashnav-link '}>
                 <i className={location.pathname === '/settings' ? 'bi-gear-fill' : 'bi-gear'}></i>
                 <span className="link-text">Settings</span>

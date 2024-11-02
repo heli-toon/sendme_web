@@ -3,7 +3,6 @@ import Tos from './pages/Tos'
 import Post from './pages/Post'
 import Login from './pages/Login'
 import Error404 from './pages/404'
-import Error500 from './pages/500'
 import SignUp from './pages/SignUp'
 import Privacy from './pages/Privacy'
 import Landing from './pages/Landing'
@@ -50,7 +49,6 @@ export default function App() {
           <Route path='/post' element={<Post />}></Route>
           <Route path='/settings' element={<Settings />}></Route>
           <Route path='/login' element={<Login />}></Route>
-          <Route path='/500' element={<Error500 />}></Route>
           <Route path='/landing' element={<Landing />}></Route>
           <Route path='/register' element={<SignUp />}></Route>
           <Route path='/blog/wink-intro' element={<Blog0 />}></Route>
