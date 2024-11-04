@@ -4,7 +4,7 @@ function SecurityTab() {
     <>
       <div id="security" className="securitypref d-flex">
         <form action="" method="post" encType="multipart/form-data">
-          <h2>Passwords and Security</h2>
+          <h2>Change Password</h2>
           <div className="border-bottom"></div>
           <div className="password-change d-flex flex-column">
               <label htmlFor="currentpassword">
@@ -20,7 +20,7 @@ function SecurityTab() {
             </div>
             <div className="password-change d-flex flex-column">
               <label htmlFor="confirmpassword">
-                <i className="bi bi-lock-fill"></i> Confirm Password
+                <i className="bi bi-check2-circle"></i> Confirm Password
               </label>
               <input type="password" id="confirmpassword" placeholder="Confirm Password" name="password"/>
             </div>

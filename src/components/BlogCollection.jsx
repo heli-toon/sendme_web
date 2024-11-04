@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import verba from "../assets/images/hero-fullscreen-bg.jpg";
 export default function BlogCollection() {
   return (
@@ -21,7 +22,7 @@ export default function BlogCollection() {
                   </div>
                   <div className="meta-time">
                     <i className="bi bi-clock mx-1"></i>
-                    <span className="post-date">2.1 min read</span>
+                    <span className="post-date">2.1 min</span>
                   </div>
                 </div>
                 <h3 className="post-title">
@@ -54,7 +55,7 @@ export default function BlogCollection() {
                   </div>
                   <div className="meta-time">
                     <i className="bi bi-clock mx-1"></i>
-                    <span className="post-date">2.1 min read</span>
+                    <span className="post-date">2.1 min</span>
                   </div>
                 </div>
                 <h3 className="post-title">
@@ -77,7 +78,7 @@ export default function BlogCollection() {
                   <img
                     src={verba}
                     className="img-fluid"
-                    alt=""
+                    alt="Blog Image"
                   />
                 </div>
                 <div className="meta d-flex align-items-center">
@@ -87,7 +88,7 @@ export default function BlogCollection() {
                   </div>
                   <div className="meta-time">
                     <i className="bi bi-clock mx-1"></i>
-                    <span className="post-date">2.1 min read</span>
+                    <span className="post-date">2.1 min</span>
                   </div>
                 </div>
                 <h3 className="post-title">
@@ -98,10 +99,10 @@ export default function BlogCollection() {
                   laboriosam. Quis omnis repellat sed quae consectetur magnam
                   veritatis...
                 </p>
-                <a href="blog-details.html" className="readmore btned">
+                <Link to="/blog" className="readmore btned">
                   <span>Read More</span>
                   <i className="bi bi-arrow-right"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

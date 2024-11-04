@@ -75,7 +75,7 @@ function AccountTab() {
           <div className="border-bottom"></div>
           <div className="themepref">
             <label htmlFor="toggle">
-              <i className="bi bi-brightness-high"></i> Dark Mode
+              <i className="bi bi-brightness-high-fill"></i> Dark Mode
             </label>
             <label htmlFor="toggle" className="toggle">
               <input title="Theme" name="theme" id="toggle" type="checkbox" checked={isDarkTheme} onChange={toggleTheme} />

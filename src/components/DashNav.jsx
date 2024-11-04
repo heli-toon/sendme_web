@@ -8,7 +8,7 @@ export default function DashNav() {
           <ul className="dashnavbar-nav">
             <li className="logo">
               <img src={logo} alt="Wink Logo" />
-              <Link title="Dashboard" to="/"className="dashnav-link">
+              <Link title="Dashboard" to="/landing" className="dashnav-link">
                 <span className="link-text">Wink</span>
               </Link>
             </li>

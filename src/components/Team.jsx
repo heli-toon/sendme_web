@@ -18,10 +18,10 @@ export default function Team() {
                                 <div className="member-img">
                                     <img src={img} className="img-fluid" alt="" />
                                     <div className="social">
-                                        <a href=""><i className="bi bi-twitter-x"></i></a>
-                                        <a href=""><i className="bi bi-facebook"></i></a>
-                                        <a href=""><i className="bi bi-instagram"></i></a>
-                                        <a href=""><i className="bi bi-linkedin"></i></a>
+                                        <a href="https://www..com" rel="noreferrer" target="_blank"><i className="bi bi-twitter-x"></i></a>
+                                        <a href="https://www..com" rel="noreferrer" target="_blank"><i className="bi bi-facebook"></i></a>
+                                        <a href="https://www..com" rel="noreferrer" target="_blank"><i className="bi bi-instagram"></i></a>
+                                        <a href="https://www..com" rel="noreferrer" target="_blank"><i className="bi bi-linkedin"></i></a>
                                     </div>
                                 </div>
                                 <div className="member-info">
@@ -36,14 +36,14 @@ export default function Team() {
                             <div className="member-img">
                                 <img src={img} className="img-fluid" alt="" />
                                 <div className="social">
-                                    <a href=""><i className="bi bi-twitter-x"></i></a>
-                                    <a href=""><i className="bi bi-facebook"></i></a>
-                                    <a href=""><i className="bi bi-instagram"></i></a>
-                                    <a href=""><i className="bi bi-linkedin"></i></a>
+                                    <a href="https://www..com" rel="noreferrer" target="_blank"><i className="bi bi-twitter-x"></i></a>
+                                    <a href="https://www..com" rel="noreferrer" target="_blank"><i className="bi bi-facebook"></i></a>
+                                    <a href="https://www..com" rel="noreferrer" target="_blank"><i className="bi bi-instagram"></i></a>
+                                    <a href="https://www..com" rel="noreferrer" target="_blank"><i className="bi bi-linkedin"></i></a>
                                 </div>
                             </div>
                             <div className="member-info">
-                                <h4>Ankamah Kofi Prince</h4>
+                                <h4>Ankamah Prince</h4>
                                 <span>Product Manager</span>
                                 <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
                             </div>
@@ -54,10 +54,10 @@ export default function Team() {
                             <div className="member-img">
                                 <img src={img} className="img-fluid" alt="" />
                                 <div className="social">
-                                    <a href=""><i className="bi bi-twitter-x"></i></a>
-                                    <a href=""><i className="bi bi-facebook"></i></a>
-                                    <a href=""><i className="bi bi-instagram"></i></a>
-                                    <a href=""><i className="bi bi-linkedin"></i></a>
+                                    <a href="https://www.x.com/SalayAbdul/" rel="noreferrer" target="_blank"><i className="bi bi-twitter-x"></i></a>
+                                    <a href="https://www..com" rel="noreferrer" target="_blank"><i className="bi bi-facebook"></i></a>
+                                    <a href="https://www..com" rel="noreferrer" target="_blank"><i className="bi bi-instagram"></i></a>
+                                    <a href="https://www..com" rel="noreferrer" target="_blank"><i className="bi bi-linkedin"></i></a>
                                 </div>
                             </div>
                             <div className="member-info">
@@ -72,14 +72,14 @@ export default function Team() {
                                 <div className="member-img">
                                     <img src={img} className="img-fluid" alt="" />
                                     <div className="social">
-                                        <a href=""><i className="bi bi-twitter-x"></i></a>
-                                        <a href=""><i className="bi bi-facebook"></i></a>
-                                        <a href=""><i className="bi bi-instagram"></i></a>
-                                        <a href=""><i className="bi bi-linkedin"></i></a>
+                                        <a href="https://www..com" rel="noreferrer" target="_blank"><i className="bi bi-twitter-x"></i></a>
+                                        <a href="https://www..com" rel="noreferrer" target="_blank"><i className="bi bi-facebook"></i></a>
+                                        <a href="https://www..com" rel="noreferrer" target="_blank"><i className="bi bi-instagram"></i></a>
+                                        <a href="https://www..com" rel="noreferrer" target="_blank"><i className="bi bi-linkedin"></i></a>
                                     </div>
                                 </div>
                                 <div className="member-info">
-                                    <h4>Daniella Sogolo</h4>
+                                    <h4>Sogolo Daniella</h4>
                                     <span>Marketing Executive</span>
                                     <p>Rerum voluptate non adipisci animi distinctio et deserunt amet voluptas. Quia aut aliquid doloremque ut possimus ipsum officia.</p>
                                 </div>
