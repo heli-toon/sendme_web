@@ -5,6 +5,7 @@ import "bootstrap"
 import AccountTab from "../components/settingstabs/AccountTab";
 import { Link, useNavigate } from "react-router-dom";
 import SecurityTab from "../components/settingstabs/SecurityTab";
+import Backtotop from "../components/Backtotop";
 
 export default function Settings() {
     const [activeTab, setActiveTab] = useState('personal');
@@ -46,6 +47,7 @@ export default function Settings() {
                     </div>
                 </section>
             </main>
+            <Backtotop />
         </>
     )
 }
