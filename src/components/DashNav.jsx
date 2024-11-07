@@ -30,12 +30,12 @@ export default function DashNav() {
                 <span className="link-text">Chat</span>
               </Link>
             </li>
-            <li className="dashnav-item">
+            {/* <li className="dashnav-item">
               <Link title="Moderator Dashboard" to="/mod" className={location.pathname === '/mod' ? 'dashnav-link active' : 'dashnav-link '}>
                 <i className={location.pathname === '/mod' ? 'bi-activity' : 'bi-activity'}></i>
-                <span className="link-text">Mod Dashboard</span>
+                <span className="link-text">Dashboard</span>
               </Link>
-            </li>
+            </li> */}
             <li className="dashnav-item">
               <Link title="Settings" to="/settings" className={location.pathname === '/settings' ? 'dashnav-link active' : 'dashnav-link '}>
                 <i className={location.pathname === '/settings' ? 'bi-gear-fill' : 'bi-gear'}></i>

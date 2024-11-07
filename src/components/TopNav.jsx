@@ -45,9 +45,9 @@ export default function TopNav() {
                         </Link>
                     </li>
                     <li className="nav-item has-dropdown">
-                        <a href="#" className="nav-icon-button" title="More">
+                        <Link to="#" className="nav-icon-button" title="More">
                             <i className="bi bi-caret-down-fill"></i>
-                        </a>
+                        </Link>
                         <ul className="nav-dropdown">
                             <li className="nav-dropdown-menu-item">
                                 <Link to="/settings">
@@ -62,6 +62,11 @@ export default function TopNav() {
                             <li className="nav-dropdown-menu-item">
                                 <Link to="/feedback"
                                     ><i className="bi bi-chat-square-dots-fill"></i> Feedback
+                                </Link>
+                            </li>
+                            <li className="nav-dropdown-menu-item">
+                                <Link to="/mod"
+                                    ><i className="bi bi-activity"></i> Mod Dashboard
                                 </Link>
                             </li>
                             <li className="nav-dropdown-menu-item">

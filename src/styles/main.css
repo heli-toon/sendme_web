@@ -25,7 +25,7 @@
   --anim-long:1s;
   --primary:var(--blue1);
   --glass-card:rgba(255, 255, 255, 0.3);
-  --box-shadow:0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  --box-shadow:0px 4px 8px rgba(0, 0, 0, 0.2);
   --hero-bg-light:rgba(255, 255, 255, 0.85);
   --hero-bg-dark:rgba(0, 0, 0, 0.85);
   --nav-size:60px;
@@ -342,7 +342,10 @@ input:checked + .slider:before{transform:translateX(26px)}
   border-radius:var(--bg-sec);
   box-shadow: var(--box-shadow);
 }
-.card{border-color:var(--bg-sec);}
+.card{
+  border: 1px solid var(--bg-sec);
+  box-shadow: var(--box-shadow);
+}
 .onboarding label{
   width:100%;
   text-align:left;
@@ -521,6 +524,7 @@ main#in .settings .settings-nav{
   justify-content:space-between;
 }
 main#in .settings .settings-body{
+  border: 1px solid var(--bg-sec);
   margin-top:1rem;
   background:var(--bg-sec);
   border-radius:var(--border-rad-card);
@@ -1699,12 +1703,11 @@ body.dark .post-item time{
 }
 /* MOD DASHBOARD */
 .dashboard .card{
+  border: 1px solid var(--bg-sec);
   background: var(--bg-teri);
   border-radius: var(--border-rad-card);
   text-align: left;
   margin-bottom: 30px;
-  box-shadow: var(--box-shadow);
-  border: none;
 }
 .dashboard .card .card-title{
   color: var(--text-color);
