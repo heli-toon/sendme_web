@@ -10,6 +10,7 @@ import Blog0 from './pages/blogs/Blog0'
 import Settings from './pages/Settings'
 import Dashboard from './pages/Dashboard'
 import NoInternet from './pages/NoInternet'
+import ModDashboard from './pages/ModDashboard'
 // import ProtectedRoute from "./components/ProtectedRoute"
 import './styles/main.css'
 import './styles/bootstrap-icons.min.css'
@@ -49,6 +50,7 @@ export default function App() {
           <Route path='/post' element={<Post />}></Route>
           <Route path='/settings' element={<Settings />}></Route>
           <Route path='/login' element={<Login />}></Route>
+          <Route path='/mod' element={<ModDashboard />}></Route>
           <Route path='/landing' element={<Landing />}></Route>
           <Route path='/register' element={<SignUp />}></Route>
           <Route path='/blog/wink-intro' element={<Blog0 />}></Route>

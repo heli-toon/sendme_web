@@ -18,6 +18,9 @@ export default function TopNav() {
         case '/profile':
             iconClass = 'bi-person-fill';
             break;
+        case '/mod':
+            iconClass = 'bi-activity';
+            break;
         default:
             iconClass = 'bi-question-circle-fill';
     }
