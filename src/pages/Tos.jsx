@@ -1,3 +1,4 @@
+import Backtotop from '../components/Backtotop.jsx'
 import Footer from '../components/Footer.jsx'
 import MainNavbar from '../components/MainNavbar.jsx'
 
@@ -88,12 +89,13 @@ export default function Tos() {
                         </p>
                         <p>By using our Service, you acknowledge that you have read, understand, and agree to be bound by these ToS. If you do not agree, please do not use our Service.</p>
                         <p>
-                            Effective Date: 31st July, 2024
+                            Effective Date: 1st Decemeber, 2024
                         </p>
                     </article>
                 </div>
             </section>
             <Footer />
+            <Backtotop />
         </>
     )
 }

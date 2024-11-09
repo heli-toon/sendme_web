@@ -1,3 +1,4 @@
+import Backtotop from '../components/Backtotop.jsx'
 import Footer from '../components/Footer.jsx'
 import MainNavbar from '../components/MainNavbar.jsx'
 
@@ -63,12 +64,13 @@ export default function Privacy() {
                             If you have privacy-related questions or concerns, please contact us at <a href="mailto:inquiries.wink@gmail.com">inquiries.wink@gmail.com</a>.
                         </p>
                         <p>
-                            Effective Date: 1st July, 2024
+                            Effective Date: 1st December, 2024
                         </p>
                     </article>
                 </div>
             </section>
             <Footer />
+            <Backtotop />
         </>
     )
 }

@@ -16,9 +16,5 @@ export default function Backtotop() {
       window.removeEventListener("scroll", handleWindowScrolltotop);
     };
   }, []);
-    return (
-      <>
-        <a ref={toTop} href="#" className="btned back-to-top d-flex align-items-center justify-content-center" title="Back to Top"><i className="bi bi-arrow-up-circle-fill"></i></a>
-      </>
-    )
+    return <a ref={toTop} href="#" className="btned back-to-top d-flex align-items-center justify-content-center" title="Back to Top"><i className="bi bi-arrow-up"></i></a>
 }

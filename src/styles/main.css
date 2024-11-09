@@ -134,6 +134,11 @@ textarea{
   outline:0;
   border:none;
 }
+button:disabled{
+  background: var(--gray) !important;
+  cursor: not-allowed;
+}
+button:disabled:hover{filter: brightness(1)}
 input,
 textarea,
 select, 
@@ -146,9 +151,7 @@ progress{
   margin:1em 0;
   accent-color: var(--primary);
 }
-table>:not(caption)>*>* {
-  border-color: var(--gray);
-}
+table>:not(caption)>*>* {border-color: var(--gray);}
 .btned{
   outline:none;
   padding:0.6rem 0.9rem !important;
@@ -914,7 +917,7 @@ nav .logo img{
 .breadcrumbs ol li+li::before{
   display:inline-block;
   padding-right:10px;
-  color:var(--gray);
+  color: var(--hero-bg)!important;
   content:"/";
 }
 @media (max-width:992px){
@@ -1667,40 +1670,18 @@ body.dark .faq .accordion-button:is(.collapsed):after{filter:invert(1)}
   margin-bottom:2em;
 }
 @media (min-width:992px){.error-page img{max-width:50%}}
-body.dark .post-item{
-  color: var(--white1);
-}
-body.dark .post-item time{
-  color: var(--bg);
-}
-.post-item{
-  border-radius: var(--border-rad-card);
-}
-.post-item h5{
-  letter-spacing: normal;
-}
-.post-item .price{
-  filter: brightness(2.0);
-}
-.post-item button{
-  background-color: var(--text-color) !important;
-}
-.post-item button:hover{
-  background-color: var(--text-color) !important;
-}
+body.dark .post-item{color: var(--white1)}
+body.dark .post-item time{color: var(--bg)}
+.post-item{border-radius: var(--border-rad-card)}
+.post-item h5{letter-spacing: normal}
+.post-item .price{filter: brightness(2.0)}
+.post-item button{background-color: var(--text-color) !important}
+.post-item button:hover{background-color: var(--text-color) !important}
 .post-item .time{
   padding: .2rem;
   border-radius: var(--border-rad-card);
 }
-.pagetitle {
-  margin-bottom: 10px;
-}
-.breadcrumb-item.active{
-  color: var(--primary);
-}
-.breadcrumb-item::before.active{
-  color: var(--gray) !important;
-}
+.pagetitle {margin-bottom: 10px}
 /* MOD DASHBOARD */
 .dashboard .card{
   border: 1px solid var(--bg-sec);
@@ -1709,12 +1690,8 @@ body.dark .post-item time{
   text-align: left;
   margin-bottom: 30px;
 }
-.dashboard .card .card-title{
-  color: var(--text-color);
-}
-.dashboard .card span{
-  color: var(--text-color);
-}
+.dashboard .card .card-title{color: var(--text-color)}
+.dashboard .card span{color: var(--text-color)}
 /* Filter dropdown */
 .dashboard .filter {
   position: absolute;
@@ -1729,12 +1706,8 @@ body.dark .post-item time{
   font-size: 16px;
 }
 .dashboard .filter .icon:hover,
-.dashboard .filter .icon:focus {
-  color: var(--primary);
-}
-.dashboard .filter .dropdown-header {
-  padding: 8px 15px;
-}
+.dashboard .filter .icon:focus {color: var(--primary)}
+.dashboard .filter .dropdown-header {padding: 8px 15px}
 .dashboard .filter .dropdown-header h6 {
   text-transform: uppercase;
   font-size: 14px;
@@ -1749,18 +1722,15 @@ body.dark .post-item time{
   color: var(--text-color);
   border-radius: var(--border-rad-card);
   box-shadow: var(--box-shadow);
+  z-index: 1;
 }
 .dashboard .filter .dropdown-item {
   padding: 8px 15px;
   color: var(--text-color);
 }
-.dashboard .filter .dropdown-item:hover {
-  background: var(--bg-sec);
-}
+.dashboard .filter .dropdown-item:hover {background: var(--bg-sec)}
 /* Info Cards */
-.dashboard .info-card {
-  padding-bottom: 10px;
-}
+.dashboard .info-card {padding-bottom: 10px}
 .dashboard .info-card h6 {
   font-size: 28px;
   color: var(--primary);
@@ -1781,9 +1751,7 @@ body.dark .post-item time{
   background: var(--bg-sec);
 }
 /* Activity */
-.dashboard .activity {
-  font-size: 14px;
-}
+.dashboard .activity {font-size: 14px}
 .dashboard .activity .activity-item .activite-label {
   color: var(--gray);
   position: relative;
@@ -1817,22 +1785,13 @@ body.dark .post-item time{
   padding-bottom: 20px;
 }
 .dashboard .activity .activity-item:first-child .activite-label::before {top: 5px}
-.dashboard .activity .activity-item:last-child .activity-content {
-  padding-bottom: 0;
-}
+.dashboard .activity .activity-item:last-child .activity-content {padding-bottom: 0}
 /* Top Selling */
-.dashboard .top-selling,
-.dashboard .reports {
-  font-size: 14px;
-}
+.dashboard .top-selling, .dashboard .reports {font-size: 14px}
 .dashboard .reports .table,
-.dashboard .top-selling .table  {
-  border-radius: var(--border-rad-card);
-}
+.dashboard .top-selling .table {border-radius: var(--border-rad-card)}
 .dashboard .reports .table thead,
-.dashboard .top-selling .table thead {
-  background: var(--bg-teri) !important;
-}
+.dashboard .top-selling .table thead {background: var(--bg-teri) !important}
 .dashboard .reports .table thead th,
 .dashboard .top-selling .table thead th {
   color: var(--text-color);
@@ -1851,9 +1810,7 @@ body.dark .post-item time{
   border-radius: 5px;
   max-width: 60px;
 }
-.dashboard .create-announcement a i{
-  font-size: 50px;
-}
+.dashboard .create-announcement a i{font-size: 50px}
 .dashboard .ban-users input{
   background: var(--bg-sec) !important;
   color: var(--text-color);

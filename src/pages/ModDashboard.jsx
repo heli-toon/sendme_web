@@ -14,14 +14,6 @@ function ModDashboard() {
       <main id="in" className="d-flex flex-column dashboard">
         <div className="pagetitle">
           <h1 className="m-0">Mod Dashboard</h1>
-          <nav>
-            <ol className="breadcrumb">
-              <li className="breadcrumb-item">
-                <Link to="index.html">Home</Link>
-              </li>
-              <li className="breadcrumb-item active">Mod Dashboard</li>
-            </ol>
-          </nav>
         </div>
         <section className="dashboard">
           <div className="row">
@@ -402,7 +394,7 @@ function ModDashboard() {
                   </ul>
                 </div>
                 <div className="card-body">
-                  <h5 className="card-title">Recent Activity <span>| Today</span></h5>
+                  <h5 className="card-title">Recent Activity</h5>
                   <div className="activity">
                     <div className="activity-item d-flex">
                       <div className="activite-label">32 min</div>
@@ -462,7 +454,7 @@ function ModDashboard() {
                   </ul>
                 </div>
                 <div className="card-body pb-0">
-                  <h5 className="card-title">Traffic <span>| Today</span></h5>
+                  <h5 className="card-title">Traffic</h5>
                   A PIE CHART GOES HERE [TOP TASKS PERCENTAGE]
                   <div id="trafficChart" style={{minHeight:400}} className="echart"></div>
                   {/* <script>
