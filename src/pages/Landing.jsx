@@ -4,6 +4,7 @@ import Team from '../components/Team.jsx'
 import About from '../components/About.jsx'
 import Footer from '../components/Footer.jsx'
 import Contact from '../components/Contact.jsx'
+import Services from '../components/Services.jsx'
 import Waitlist from '../components/Waitlist.jsx'
 import Backtotop from '../components/Backtotop.jsx'
 import MainNavbar from '../components/MainNavbar.jsx'
@@ -16,10 +17,11 @@ export default function Landing() {
             <MainNavbar />
             <Hero />
             <About />
-            <Team />
-            <Faqs />
+            <Services />
             <Waitlist />
+            <Faqs />
             <BlogCollection />
+            <Team />
             <Contact />
             <Footer />
             <Backtotop />

@@ -1176,6 +1176,34 @@ nav .logo img{
 }
 .features .icon-box:hover{transform:translateY(-10px);}
 .features .icon-box:hover h4 a{filter:brightness(1.2);}
+/* SERVICES */
+.services .icon-box {
+  box-shadow: var(--box-shadow);
+  padding: 3.4em 2em;
+  transition: var(--anim-short);
+  background: var(--bg-sec);
+  border-radius: var(--border-rad-card);
+}
+.services .icon-box .icon {margin-bottom: 10px}
+.services .icon-box .icon i {
+  color: var(--primary);
+  font-size: 3rem;
+  transition: var(--anim-short);
+}
+.services .icon-box h4 {
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+.services .icon-box h4 a {
+  color: var(--primary);
+  transition: var(--anim-short);
+}
+.services .icon-box p {
+  line-height: 24px;
+  margin-bottom: 0;
+}
+.services .icon-box:hover {transform: translateY(-10px);}
+.services .icon-box:hover h4 a {filter: brightness(1.2);}
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/

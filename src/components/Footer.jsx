@@ -14,11 +14,12 @@ export default function Footer() {
                             </a>
                             <p>Do you need help with a task? Are you looking for a way to make money doing tasks for others? Wink is the perfect solution. Post a task or take on a task.</p>
                             <div className="social-links mt-3">
-                                <a title="Twitter-X" href="#" className="twitter-x"><i className="bi bi-twitter-x"></i></a>
-                                <a title="Facebook" href="#" className="facebook"><i className="bi bi-facebook"></i></a>
-                                <a title="Instagram" href="#" className="instagram"><i className="bi bi-instagram"></i></a>
-                                <a title="Linkedin" href="#" className="linkedin"><i className="bi bi-linkedin"></i></a>
-                                <a title="Tiktok" href="#" className="tiktok"><i className="bi bi-tiktok"></i></a>
+                                <a target="_blank" rel="noreferer" title="Twitter/X" href="#" className="twitter-x"><i className="bi bi-twitter-x"></i></a>
+                                <a target="_blank" rel="noreferer" title="Facebook" href="#" className="facebook"><i className="bi bi-facebook"></i></a>
+                                <a target="_blank" rel="noreferer" title="Instagram" href="#" className="instagram"><i className="bi bi-instagram"></i></a>
+                                <a target="_blank" rel="noreferer" title="Telegram" href="#" className="telegram"><i className="bi bi-telegram"></i></a>
+                                <a target="_blank" rel="noreferer" title="Linkedin" href="#" className="linkedin"><i className="bi bi-linkedin"></i></a>
+                                <a target="_blank" rel="noreferer" title="Tiktok" href="#" className="tiktok"><i className="bi bi-tiktok"></i></a>
                             </div>
                         </div>
                         <div className="col-lg-2 col-6 footer-links">
