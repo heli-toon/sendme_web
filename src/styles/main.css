@@ -65,8 +65,7 @@ body{
   overflow-x:hidden;
   color:var(--text-color);
   background:var(--bg);
-  transition:background var(--anim-mid) ease-in-out,
-    color var(--anim-long) ease-in-out;
+  transition: background-color var(--anim-short) ease-in-out, color var(--anim-mid) ease-in-out;
 }
 html{
   scroll-behavior:smooth;
@@ -1846,4 +1845,7 @@ body.dark .post-item time{color: var(--bg)}
 .dashboard .userstoban .user-item:hover{
   background: var(--bg-sec);
   border-radius: var(--border-rad-card);
+}
+.apexcharts-toolbar{
+  z-index: 0 !important;
 }
