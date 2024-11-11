@@ -1,13 +1,14 @@
 import axios from 'axios';
 import dayjs from 'dayjs';
 import jwt_decode from 'jwt-decode';
-import { useContext } from 'react';
+import { useContext, useRef } from 'react';
 import AuthContext from '../context/AuthContext';
 
 const baseURL = 'http://127.0.0.1:8000/api';
 
 const useAxios = () => {
-    const { authTokens, setUser, setAuthTokens } = useContext(AuthContext);
+    const { authTokens, setUser, setAuthTokens, logoutUser } = useContext(AuthContext);
+    const refreshTokenCall = useRef(null);
 
     const axiosInstance = axios.create({
         baseURL,
@@ -22,20 +23,34 @@ const useAxios = () => {
 
         if (!isExpired) return req;
 
-        try {
-            const response = await axios.post(`${baseURL}/token/refresh/`, {
+        if (!refreshTokenCall.current) {
+            refreshTokenCall.current = axios.post(`${baseURL}/token/refresh/`, {
                 refresh: authTokens.refresh,
+            }).catch((error) => {
+                if (error.response && error.response.status === 400) {
+                    logoutUser(); // Log out the user
+                }
+                throw error;
             });
-
+        }
+        try {
+            const response = await refreshTokenCall.current;
             localStorage.setItem('authTokens', JSON.stringify(response.data));
             setAuthTokens(response.data);
             setUser(jwt_decode(response.data.access));
             req.headers.Authorization = `Bearer ${response.data.access}`;
         } catch (error) {
-            console.error('Error refreshing token', error);
+            console.error('Error refreshing token:', error);
+        } finally {
+            refreshTokenCall.current = null; // Reset after attempt
         }
 
         return req;
+    }, error => {
+        if (error.response.status === 401) {
+            logoutUser(); // Log out if unauthorized
+        }
+        return Promise.reject(error);
     });
 
     return axiosInstance;

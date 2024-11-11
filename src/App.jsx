@@ -11,6 +11,8 @@ import Settings from './pages/Settings'
 import Dashboard from './pages/Dashboard'
 import NoInternet from './pages/NoInternet'
 import ModDashboard from './pages/ModDashboard'
+import PrivateRoutes from './utils/PrivateRoutes'
+import { AuthProvider } from './context/AuthContext'
 // import ProtectedRoute from "./components/ProtectedRoute"
 import './styles/main.css'
 import './styles/bootstrap-icons.min.css'
@@ -38,26 +40,24 @@ export default function App() {
   return (
     <>
       <BrowserRouter>
-        <Routes>
-          <Route path='/terms' element={<Tos />}></Route>
-          {/* <Route path="/" element={
-            <ProtectedRoute>
-              <Dashboard />
-            </ProtectedRoute>
-          }
-        /> */}
-          <Route path='/' element={<Dashboard />}></Route>
-          <Route path='/post' element={<Post />}></Route>
-          <Route path='/settings' element={<Settings />}></Route>
-          <Route path='/login' element={<Login />}></Route>
-          <Route path='/mod' element={<ModDashboard />}></Route>
-          <Route path='/landing' element={<Landing />}></Route>
-          <Route path='/register' element={<SignUp />}></Route>
-          <Route path='/blog/wink-intro' element={<Blog0 />}></Route>
-          <Route path='/nointernet' element={<NoInternet />}></Route>
-          <Route path='/privacy-policy' element={<Privacy />}></Route>
-          <Route path='*' element={<Error404 />}></Route>
-        </Routes>
+        <AuthProvider>
+          <Routes>
+            <Route element={<PrivateRoutes />}>
+              <Route path='/' element={<Dashboard />}></Route>
+              <Route path='/post' element={<Post />}></Route>
+              <Route path='/settings' element={<Settings />}></Route>
+              <Route path='/mod' element={<ModDashboard />}></Route>
+            </Route>
+            <Route path='/terms' element={<Tos />}></Route>
+            <Route path='/login' element={<Login />}></Route>
+            <Route path='/landing' element={<Landing />}></Route>
+            <Route path='/register' element={<SignUp />}></Route>
+            <Route path='/blog/wink-intro' element={<Blog0 />}></Route>
+            <Route path='/nointernet' element={<NoInternet />}></Route>
+            <Route path='/privacy-policy' element={<Privacy />}></Route>
+            <Route path='*' element={<Error404 />}></Route>
+          </Routes>
+        </AuthProvider>
       </BrowserRouter>
     </>
   )
