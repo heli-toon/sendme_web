@@ -1,5 +1,6 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useContext } from "react";
 import { Link } from "react-router-dom";
+import AuthContext from '../context/AuthContext';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
 import logo from "../assets/logo.png";
@@ -11,15 +12,30 @@ export default function Login() {
   const [validated, setValidated] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false)
 
+  const { loginUser } = useContext(AuthContext)
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = onboardingRef.current;
     form.classList.add("was-validated");
     if (!form.checkValidity()) {
-      event.stopPropagation();
-      setValidated(true);
-    }else{setIsSubmitting(true)}
-  };
+        event.stopPropagation();
+        setValidated(true);
+    } else {
+        setIsSubmitting(true);
+        const email = event.target.email.value;
+        const password = event.target.password.value;
+
+        if (email.length > 0) {
+            try {
+                loginUser(email, password); // Ensure loginUser is an async function
+            } catch (error) {
+                console.error("Login failed:", error); // Handle login error (optional)
+            }
+            setIsSubmitting(false); // Always reset isSubmitting state
+        }
+    }
+};
   return (
     <>
       <section className="login min-vh-100 d-flex flex-column align-items-center justify-content-center">
@@ -28,7 +44,7 @@ export default function Login() {
             <div className="col-lg-6 col-md-6 d-flex flex-column align-items-center justify-content-center">
               <div className="d-flex justify-content-center py-4">
                 <Link href="/landing" className="logo d-flex align-items-center w-auto">
-                  <img src={logo} alt="" />
+                  <img src={logo} alt="Wink Logo" />
                   <span className="d-none d-lg-block">Wink</span>
                 </Link>
               </div>
@@ -39,13 +55,13 @@ export default function Login() {
                   </div>
                   <form className="row g-3 needs-validation" ref={onboardingRef} onSubmit={handleSubmit} noValidate>
                     <div className="col-12">
-                      <label htmlFor="yourEmail" className="form-label">Your Email</label>
-                      <input type="email" name="email" placeholder="Email" className="form-control" id="yourEmail" required />
+                      <label htmlFor="email" className="form-label">Your Email</label>
+                      <input type="email" name="email" placeholder="Email" className="form-control" id="email" required />
                       {validated && <div className="invalid-feedback">Please enter a valid Email adddress!</div>}
                     </div>
                     <div className="col-12">
-                      <label htmlFor="yourPassword" className="form-label">Password</label>
-                      <input type="password" name="password" className="form-control" id="yourPassword" placeholder="Password" required />
+                      <label htmlFor="password" className="form-label">Password</label>
+                      <input type="password" name="password" className="form-control" id="password" placeholder="Password" required />
                       {validated && <div className="invalid-feedback">Please enter your password!</div>}
                       <p className="small mb-0 d-flex flex-row justify-content-end"><Link to="/reset-password" className='text-decoration-underline'>Forgot Password?</Link></p>
                     </div>

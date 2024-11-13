@@ -25,13 +25,11 @@ export const AuthProvider = ({ children }) => {
             const response = await fetch('http://127.0.0.1:8000/api/token/', {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ email, password })
+                body: JSON.stringify({ email, password })  // Include email and password
             });
-
             const data = await response.json();
-
             if (response.status === 200) {
                 setAuthTokens(data);
                 const decodedUser = jwt_decode(data.access);
@@ -47,9 +45,7 @@ export const AuthProvider = ({ children }) => {
                     timerProgressBar: true,
                     showConfirmButton: false
                 });
-            } else {
-                handleLoginError(response, data);
-            }
+            } else {handleLoginError(response, data)}
         } catch (error) {
             console.error('Login error:', error);
             swal.fire({
@@ -64,6 +60,7 @@ export const AuthProvider = ({ children }) => {
             });
         }
     };
+    
 
     const registerUser = async (email, password, password2) => {
         try {

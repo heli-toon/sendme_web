@@ -1,5 +1,6 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useContext } from 'react';
 import { Link } from "react-router-dom";
+import AuthContext from '../context/AuthContext';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
 import logo from "../assets/logo.png";
@@ -11,6 +12,8 @@ export default function SignUp() {
   const [validated, setValidated] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false)
 
+  const { registerUser } = useContext(AuthContext)
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = onboardingRef.current;
@@ -18,7 +21,21 @@ export default function SignUp() {
     if (!form.checkValidity()) {
       event.stopPropagation();
       setValidated(true);
-    }else{setIsSubmitting(true)}
+    } else {
+      setIsSubmitting(true);
+      const email = event.target.email.value;
+      const password = event.target.password.value;
+      const password2 = event.target.password2.value;
+
+      if (email.length > 0) {
+        try {
+          registerUser(email, password, password2)
+        } catch (error) {
+          console.error("Registration failed:", error); // Handle login error (optional)
+        }
+        setIsSubmitting(false); // Always reset isSubmitting state
+      }
+  }
   };
   return (
     <>
@@ -44,13 +61,13 @@ export default function SignUp() {
                       {validated && <div className="invalid-feedback">Please enter a valid Email adddress!</div>}
                     </div>
                     <div className="col-12">
-                      <label htmlFor="yourPassword" className="form-label">Password</label>
-                      <input type="password" name="password" className="form-control" placeholder="Password" id="yourPassword" required />
+                      <label htmlFor="password" className="form-label">Password</label>
+                      <input type="password" name="password" className="form-control" placeholder="Password" id="password" required />
                       {validated && <div className="invalid-feedback">Please enter your password!</div>}
                     </div>
                     <div className="col-12">
-                      <label htmlFor="yourPassword" className="form-label">Confirm Password</label>
-                      <input type="password" name="password2" className="form-control" placeholder="Password" id="yourPassword" required />
+                      <label htmlFor="password2" className="form-label">Confirm Password</label>
+                      <input type="password" name="password2" className="form-control" placeholder="Password" id="password2" required />
                       {validated && <div className="invalid-feedback">Please enter your password!</div>}
                     </div>
                     <div className="col-12">

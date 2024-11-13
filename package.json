@@ -22,8 +22,8 @@
     "react-pwa": "^0.0.1",
     "react-router-dom": "^6.21.1",
     "socket.io": "^4.7.5",
-    "swup": "^4.6.1",
-    "sweetalert2": "^11.14.3"
+    "sweetalert2": "^11.14.3",
+    "swup": "^4.6.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

@@ -13,7 +13,6 @@ import NoInternet from './pages/NoInternet'
 import ModDashboard from './pages/ModDashboard'
 import PrivateRoutes from './utils/PrivateRoutes'
 import { AuthProvider } from './context/AuthContext'
-// import ProtectedRoute from "./components/ProtectedRoute"
 import './styles/main.css'
 import './styles/bootstrap-icons.min.css'
 
